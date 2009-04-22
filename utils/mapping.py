@@ -59,3 +59,24 @@ for article in a.ClassInstances():
 j = Periodical.get_by(issn="0309-8168")
 print j.title
 
+from genshi.template import MarkupTemplate
+t = """
+<html xmlns:py="http://genshi.edgewall.org/">
+  <head>
+    <title py:content="journal.title">This is replaced.</title>
+  </head>
+  <body>
+    <p>Table of contents:</p>
+    <ul>
+      <li py:for="article in articles">
+        Title: ${article.title}s
+      </li>
+    </ul>
+  </body>
+</html>
+"""
+
+tmpl = MarkupTemplate('<h1>Hello, $journal.title</h1>')
+tmpl = MarkupTemplate(t)
+stream = tmpl.generate(journal=j, articles=a.ClassInstances())
+print stream.render('xhtml')
