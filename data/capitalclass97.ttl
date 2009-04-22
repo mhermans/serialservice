@@ -8,11 +8,13 @@
 @prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://rdf.freebase.com/ns/en.capital_class> 
-	a 		    bibo:Journal ;
-    bibo:issn	"0309-8168";
-	dc:title 	"Capital & Class"@en .
+	a 		        bibo:Periodical ;
+    bibo:issn	    "0309-8168";
+    dc:publisher    "Conference of Socialist Economists" ;
+	dc:title 	    "Capital & Class" .
 
 <tag:capital-and-class-issue-97,2009-04-22>
+    dc:title        "Capital & Class, Spring 2009 issue" ;
     a               bibo:Issue ;
     dc:isPartOf     <http://rdf.freebase.com/ns/en.capital_class> ;
     prism:coverDate "Spring '09" ;
