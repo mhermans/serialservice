@@ -1,0 +1,115 @@
+@prefix bibo:       <http://purl.org/ontology/bibo/> .
+@prefix dc:         <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms:    <http://purl.org/dc/terms/> .
+@prefix foaf:       <http://xmlns.com/foaf/0.1/> .
+@prefix ov:	        <http://open.vocab.org/terms/> .
+@prefix prism:      <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://rdf.freebase.com/ns/en.capital_class> 
+	a 		    bibo:Journal ;
+    bibo:issn	"0309-8168";
+	dc:title 	"Capital & Class"@en .
+
+<tag:capital-and-class-issue-97,2009-04-22>
+    a               bibo:Issue ;
+    dc:isPartOf     <http://rdf.freebase.com/ns/en.capital_class> ;
+    prism:coverDate "Spring '09" ;
+    prism:number    97 .
+
+<tag:parallel-visions,2009-04-22>
+	a		        bibo:Article;
+    dc:isPartOf     <tag:capital-and-class-issue-97,2009-04-22> ;
+	dc:title	    "Parallel visions of peer production";
+	dc:creator	    "Phoebe Moore";
+	dc:creator	    "Athina Karatzogianni";
+	rdfs:comment	"Editorial";
+	dc:summary	    "The 'parallel visions' proposed by the contributing authors to this issue are intended to challenge the dominant themes of capitalist organisation and production through an in-depth look at peer-to-peer production and the development of software and sharing – a movement which, the authors argue, is based on new visions for value systems, ethics and governance. We have organised their contributions into sections based on the relevant aspects of these economies in order to look into the politics of how these networks are governed, the likelihood of new avenues for worker organisation, and the possibilities for entirely new models of economies that can be classified outside the hegemony of contemporary neoliberal capitalism." ;
+	prism:startingPage	7;
+	prism:endingPage	12;
+	#bibo:authorList    ( <http://examples.net/contributors/2> <http://examples.net/contributors/1>) .
+	ov:authorString	    "Phoebe Moore and Athina Karatzogianni" .
+
+
+<tag:the-ethical-economy,2009-04-22>
+	a		        bibo:Article;
+    dc:isPartOf     <tag:capital-and-class-issue-97,2009-04-22> ;
+    dc:title        "The ethical economy: Towards a post-capitalist theory of value";
+    dc:creator      "Adam Arvidsson";
+    dc:summary      "Social production has risen on the agenda of the social sciences. Yet most observers have been reluctant to confront the question of the value of these practices. Instead they have mostly been characterised as ‘free’, ‘common’ or beyond value. This article argues that far from being free, social production abides to a particular value logic, an ‘ethical economy’ where value is related not to the input of labour time, but to the ability to give productive organisation to a diffuse connectivity or, which is the same thing, to transform weak ties into affectively significant strong ones. The article concludes that progressive politics should work with this new emerging value logic." ;
+    prism:startingPage  13 ;
+    prism:endingPage    30 .
+
+<tag:knowledge-based-society,2009-04-22>
+	a		        bibo:Article;
+    dc:isPartOf     <tag:capital-and-class-issue-97,2009-04-22> ;
+    dc:title        "Knowledge-based society, peer production and the common good";
+    dc:creator      "Cosma Orsi";
+    dc:summary      "This article investigates the societal conditions that might help the establishment of peer-to-peer modes of production. First, the context within which such a new model is emerging — the neoliberal knowledge-based-societies — is described, and its shortcomings unveiled; and second, a robust argument is provided for the moral legitimation of an alternative societal vision, including two structural policies that are likely to facilitate the establishment and further development of peer-to-peer practices." ;
+    prism:startingPage  31;
+    prism:endingPage    52 .
+
+<tag:the-hacker-movement,2009-04-22>
+    a               bibo:Article;
+    dc:isPartOf     <tag:capital-and-class-issue-97,2009-04-22> ;
+    dc:title        "The hacker movement as a continuation of labour struggle";
+    ov:authorString "George Dafermos and Johan Söderberg";
+    dc:creator      "George Dafermos";
+    dc:creator      "Johan Söderberg";
+    dc:summary      "Examining the way in which capital exploits the volunteer labour of free software developers, this article argues that there is a historical continuity between hackers and labour struggle. The common denominator is their rejection of alienated work practices, which suggests that corporate involvement in the computer underground, far from inhibiting further struggles by hackers, may function as a catalyst for them.";
+    prism:startingPage  53 ;
+    prism:endingPage    74 .
+
+<tag:no-measure-for-culture,2009-04-22>
+    a               bibo:Article;
+    dc:isPartOf     <tag:capital-and-class-issue-97,2009-04-22> ;
+    dc:title        "No measure for culture? Value in the new economy";
+    ov:authorString "Steffen Böhm and Chris Land";
+    dc:creator      "Steffen Böhm" ,
+                    "Chris Land";
+    dc:summary      "This paper explores articulations of the value of investment in culture and the arts through a critical discourse analysis of policy documents, reports and academic commentary since 1997. It argues that in this period, discourses around the value of culture have moved from a focus on the direct economic contributions of the culture industries to their indirect economic benefits. These indirect benefits are discussed here under three main headings: creativity and innovation, employability, and social inclusion. These are in turn analysed in terms of three forms of capital: human, social and cultural. The paper concludes with an analysis of this discursive shift through the lens of autonomist Marxist concerns with the labour of social reproduction. It is our argument that, in contemporary policy discourses on culture and the arts, the government in the UK is increasingly concerned with the use of culture to form the social in the image of capital. As such, we must turn our attention beyond the walls of the factory in order to understand the contemporary capitalist production of value and resistance to it.";
+    prism:startingPage  75 ;
+    prism:endingPage    99 .
+
+<tag:exploitation-of-the-self,2009-04-22>
+    a               bibo:Article ;
+    dc:isPartOf     <tag:capital-and-class-issue-97,2009-04-22> ;
+    dc:title        "Exploitation of the self in community-based software production: Workers’ freedoms or firm foundations?" ;
+    ov:authorString "Phoebe Moore and Paul A. Taylor" ;
+    dc:creator      "Phoebe Moore" ,
+                    "Paul A. Taylor" ;
+    dc:summary      "Free and open-source software (FOSS) communities constitute an arena in which thousands of users voluntarily explore design codes, spot bugs in codes, and make contributions to the code in a fashion at odds with the otherwise hugely competitive software market. This computerisation movement emerged as a challenge to the domination of such behemoth firms as Microsoft and IBM, and is portrayed as having a revolutionary ultimate goal: ‘to provide free software to do all of the jobs computer users want to do’ (Free Software Foundation, 2008). We ask to what extent FOSS actually challenges the orthodoxy: does ego-less programming of the information bazaar really free participants from the stuffy pews of the cathedral, and challenge the essence of capitalism? Knowledge emerges only through invention and re-invention, through the restless, impatient, continuing, hopeful inquiry men pursue in the world, with the world and with each other." ;
+    prism:startingPage  99 ;
+    prism:endingPage    120 .
+
+<tag:class-and-capital-in-peer,2009-04-22>
+    a               bibo:Article ;
+    dc:isPartOf     <tag:capital-and-class-issue-97,2009-04-22> ;
+    dc:title        "Class and capital in peer production" ;
+    dc:creator      "Michel Bauwens" ;
+    dc:summary      "The aim of this paper is to make the case that peer production offers a unique chance to transcend capitalism, and that peer-to-peer movements represent the succession of industrial-society based socialisms. The paper describes the salient characteristics of peer production before going on to explore whether it is ‘transcendent’ or ‘immanent’ to the market system, concluding that it is both in that it creates a new form of capitalism and also points out how that new form might be overcome. Following a review of the hybrid economic forms emerging today, I formulate the hypothesis that peer production is actually a hyperproductive mode, forcing for-profit entities to adapt to its characteristics, thereby further integrating it into the existing political economy, but not without the transformative effects of its market transcending aspects. After examining the possible expansion of peer-production modalities to physical manufacturing, I also examine the class aspects of commons and sharing-based platforms and hypothesise the emergence of a new section of capital, netarchical capitalists, who enable and empower participation, but also monetise it and attempt to control it." ;
+    prism:startingPage  121 ;
+    prism:endingPage    142 .
+
+<tag:cyberconflic-at-the-edge,2009-04-22>
+    a               bibo:Article ;
+    dc:isPartOf     <tag:capital-and-class-issue-97,2009-04-22> ;
+    dc:title        "Cyberconflict at the edge of chaos: Cryptohierarchies and self-organisation in the open-source movement" ;
+    ov:authorString "Athina Karatzogianni and George Michaelides" ;
+    dc:creator      "Athina Karatzogianni" ,
+                    "George Michaelides" ;
+    dc:summary      "This paper differentiates between different levels of conflict in the opensource movement and discusses the role conflict and self-organisation play in the emergence of structures of leadership emergence and the bifurcation into core and peripheral groups and soft control by cryptohierarchies; in the different levels of group polarisation and conflict between communities negotiating their identity, strategy, coordination and complexity; and lastly, in the dynamic relationships between hierarchies and networks. These dynamics are forcing open-source communities to exist at the edge of chaos, and to constantly engage in lines of flight and resistance from the system of global control, while ignoring current capitalist practices and ‘growing their own’ models of self-organising knowledge creation and exchange." ;
+    prism:startingPage  143 ;
+    prism:endingPage    158 .
+
+<tag:a-definition-and-criticism,2009-04-22>
+    dc:title        "A definition and criticism of cybercommunism" ;
+    a               bibo:Article ;
+    dc:isPartOf     <tag:capital-and-class-issue-97,2009-04-22> ;
+    ov:authorString "Tere Vadén and Juha Suoranta" ;
+    dc:creator      "Tere Vadén" ,
+                    "Juha Suoranta" ;
+    dc:summary      "When ÎiÏek (2002b) defines his idea of cybercommunism using an adaptation of the Leninist formula ‘Socialism = free access to internet + the power of the soviets’, he omits the crucial part about electricity. The cybercommunist idea that the information society is more ‘spectral’ and ‘malleable’ than were the previous ‘crudely’ economical societies conceals the question of what types of communities it favours. The political economy of cybercommunism also demands an analysis of the material conditions of cyber-freedom that can be conceptualised, for instance, in terms of levels of decreasing alienation." ;
+    prism:startingPage  159 ;
+    prism:endingPage    177 .
