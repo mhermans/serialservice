@@ -50,10 +50,10 @@ for article in a.ClassInstances():
         print article.title
         print '\t', 'By', ' and '.join(article.creators)
         #for c in article.creators:
-        #    print "\t", "Author;", c 
+        #    print "\t", "Author;", c
         print '\t', article.summary[0:30], '...'
         print '\t', 'Pages', '-'.join([str(article.sPg), str(article.ePg)])
-        print '\t', article.issue[DC.isPartOf][DC.title], article.issue.number #periodical link werkt niet...
+        print '\t', article.issue.periodical.title, 'nummer', article.issue.number
         print '\n'
 
 j = Periodical.get_by(issn="0309-8168")
@@ -79,4 +79,4 @@ t = """
 tmpl = MarkupTemplate('<h1>Hello, $journal.title</h1>')
 tmpl = MarkupTemplate(t)
 stream = tmpl.generate(journal=j, articles=a.ClassInstances())
-print stream.render('xhtml')
+#print stream.render('xhtml')
