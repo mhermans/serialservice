@@ -15,7 +15,7 @@ class Periodical(rdfSubject):
     rdf_type = BIBO.Periodical
     title = rdfSingle(DC['title'])
     issn = rdfSingle(BIBO.issn)
-    #publisher = rdfSingle(DC.publisher)
+    publisher = rdfSingle(DC['publisher'])
     #publisher = rdfSingle(DC.publisher,range_type=FOAF.Organization)
     #label = rdfSingle(RDFS.label)
     #issues = rdfMultiple(
@@ -54,6 +54,7 @@ for article in a.ClassInstances():
         print '\t', article.summary[0:30], '...'
         print '\t', 'Pages', '-'.join([str(article.sPg), str(article.ePg)])
         print '\t', article.issue.periodical.title, 'nummer', article.issue.number
+        print '\t', ''.join(['ISSN: ', article.issue.periodical.issn, '.']), 'Uitgever:', article.issue.periodical.publisher
         print '\n'
 
 j = Periodical.get_by(issn="0309-8168")
