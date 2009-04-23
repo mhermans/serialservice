@@ -24,6 +24,7 @@ class Issue(rdfSubject):
     rdf_type = BIBO.Issue
     number = rdfSingle(PRISM.number)
     periodical = rdfSingle(DC.isPartOf, range_type=BIBO.Periodical)
+    #title = rdfSingle(DC.title)
 
 class Article(rdfSubject):
     rdf_type = BIBO.Article
@@ -32,8 +33,11 @@ class Article(rdfSubject):
     summary = rdfSingle(DC.summary)
     sPg = rdfSingle(PRISM.startingPage)
     ePg = rdfSingle(PRISM.endingPage)
-    #auStr = rdfSingle(OV.authorString)
+    auStr = rdfSingle(OV.authorString)
+    section = rdfSingle(PRISM.section)
     issue = rdfSingle(DC.isPartOf, range_type=BIBO.Issue)
+    ivrs = rdfMultiple(BIBO.interviewer)
+    ives = rdfMultiple(BIBO.interviewee)
 
 #class Journal(Periodical):
 #    rdf_type = BIBO.Journal
