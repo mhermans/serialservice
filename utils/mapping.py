@@ -6,8 +6,10 @@ from rdflib import ConjunctiveGraph, Namespace, Literal, BNode, URIRef
 
 BIBO = Namespace('http://purl.org/ontology/bibo/')
 DC = Namespace('http://purl.org/dc/elements/1.1/')
+DCTERMS = Namespace('http://purl.org/dc/terms/')
 OV = Namespace('http://open.vocab.org/terms/')
 PRISM = Namespace('http://prismstandard.org/namespaces/basic/2.0/')
+RDF = Namespace('http://www.w3.org/1999/02/22-rdf-syntax-ns#')
 RDFS =  Namespace('http://www.w3.org/2000/01/rdf-schema#')
 FOAF = Namespace('http://xmlns.com/foaf/0.1/')
 
@@ -30,7 +32,7 @@ class Article(rdfSubject):
     rdf_type = BIBO.Article
     title = rdfSingle(DC['title'])
     creators = rdfMultiple(DC.creator)
-    summary = rdfSingle(DC.summary)
+    abstract = rdfSingle(DCTERMS['abstract'])
     sPg = rdfSingle(PRISM.startingPage)
     ePg = rdfSingle(PRISM.endingPage)
     auStr = rdfSingle(OV.authorString)
@@ -42,6 +44,14 @@ class Article(rdfSubject):
 #class Journal(Periodical):
 #    rdf_type = BIBO.Journal
 
+#class Book(rdfSubject):
+#    rdf_type = BIBO.Book
+#    title = rdfSingle(DC['title'])
+#    creators = rdfMultiple(DC.creator)
+#    publisher = rdfSingle(DC['publisher'])
+#    pubdate = rdfSingle(DCTERMS.issued)
+#    isbn = rdfSingle(BIBO.isbn) #XXX maak IFP
+    
 mapper()
 
 
@@ -49,22 +59,33 @@ mapper()
 def testOutput():
     graph = rdfSubject.db = ConjunctiveGraph()
     graph.parse('/home/maarten/workdir/serialservice/data/capitalclass97.ttl', format="n3")
+    #graph.parse('/home/maarten/workdir/serialservice/data/nlr57.rdf')
+    #print(len(graph))
+    #for s, p, o in graph.triples((None, None, None)):
+    #    print p
 
     a = Article()
     for article in a.ClassInstances():
-        if article.title != None:
+        if article.title != None: #Waar komt dat ene blanco artikel van?
             print article.title
             print '\t', 'By', ' and '.join(article.creators)
             #for c in article.creators:
             #    print "\t", "Author;", c
-            print '\t', article.summary[0:30], '...'
+            print '\t', article.abstract[0:30], '...'
             print '\t', 'Pages', '-'.join([str(article.sPg), str(article.ePg)])
             print '\t', article.issue.periodical.title, 'nummer', article.issue.number
             print '\t', ''.join(['ISSN: ', article.issue.periodical.issn, '.']), 'Uitgever:', article.issue.periodical.publisher
             print '\n'
+    
+    #a = Article()
+    #for article in a.ClassInstances():
+    #    print article.title
+    #    print '\t', article._ppo()
+    #    print '-'*40
 
-    j = Periodical.get_by(issn="0309-8168")
-    print j.title
+
+    #j = Periodical.get_by(issn="0309-8168")
+    #print j.title
 
 def testTemplate():
 
@@ -90,8 +111,6 @@ def testTemplate():
     </body>
     </html>
     """
-
-    tmpl = MarkupTemplate('<h1>Hello, $journal.title</h1>')
     tmpl = MarkupTemplate(t)
     stream = tmpl.generate(journal=j, articles=a.ClassInstances())
     print stream.render('xhtml')
