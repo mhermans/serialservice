@@ -26,7 +26,10 @@ class Issue(rdfSubject):
     rdf_type = BIBO.Issue
     number = rdfSingle(PRISM.number)
     periodical = rdfSingle(DC.isPartOf, range_type=BIBO.Periodical)
-    #title = rdfSingle(DC.title)
+    title = rdfSingle(DC['title'])
+    pubdate = rdfSingle(DCTERMS.issued)
+    volume = rdfSingle(PRISM.volume)
+    #coveer
 
 class Article(rdfSubject):
     rdf_type = BIBO.Article
@@ -40,18 +43,30 @@ class Article(rdfSubject):
     issue = rdfSingle(DC.isPartOf, range_type=BIBO.Issue)
     ivrs = rdfMultiple(BIBO.interviewer)
     ives = rdfMultiple(BIBO.interviewee)
+    reviewOf = rdfMultiple(BIBO.reviewOf)
+
+#class ArticleInstance(rdfSubject)
+#    accessRights
 
 #class Journal(Periodical):
 #    rdf_type = BIBO.Journal
 
-#class Book(rdfSubject):
-#    rdf_type = BIBO.Book
-#    title = rdfSingle(DC['title'])
-#    creators = rdfMultiple(DC.creator)
-#    publisher = rdfSingle(DC['publisher'])
-#    pubdate = rdfSingle(DCTERMS.issued)
-#    isbn = rdfSingle(BIBO.isbn) #XXX maak IFP
-    
+class Book(rdfSubject):
+    rdf_type = BIBO.Book
+    title = rdfSingle(DC['title'])
+    creators = rdfMultiple(DC.creator)
+    publisher = rdfSingle(DC['publisher'])
+    #publishinglocation of als property op publisher?
+    pubdate = rdfSingle(DCTERMS.issued) # XXX data(time) object?
+    isbn = rdfSingle(BIBO.isbn) #XXX maak IFP
+    citation = rdfSingle(DCTERMS.bibliographicCitation)
+
+#ADR = Namespace('http://schemas.talis.com/2005/address/schema#')
+#class Publisher
+#    rdf_type = FOAF.Organization
+#    name = rdfSingle(FOAF.name)
+#    location = rdfSingle(ADR.localityName)
+
 mapper()
 
 
