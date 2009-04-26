@@ -11,9 +11,26 @@ Overerving language van taal Periodical
 RDFAlchemy remarks
 ------------------
 
+"title" as a property is tricky, use dictionary notation DC['title'] (something with unicode, cf. mailinglist)
+
 When instantiating rdfSubjects by URI, do not forget the '<' & '>'. Eg:
     
     a = Article('<http://stableid.example.com/article>')
 
-RDF types do not get assigned automaticly?
+RDF types do not get assigned automaticly? Default behaviour or bug?
 
+Inheritance works?
+
+@property -> uitzoeken hoe dat werkt
+
+Bestaande projecten:
+
+* Bruce D'arcus' persoonlijke site (overal die kerel!)
+* Shabti
+* django-foaf
+* Een mysterieze "bibliosite" door Philip Cooper
+
+TODO
+------
+
+Issue instances zouden een articles-property moeten hebben, en Periodical instances een issues-property die een gesorteerde lijst van artikels, resp. issues deient terug te geven. Cf. http://groups.google.com/group/rdfalchemy-dev/browse_thread/thread/ad9363b7f1b275c2
