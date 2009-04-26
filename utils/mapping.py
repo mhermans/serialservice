@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 
-from rdfalchemy import rdfSubject, rdfSingle, rdfMultiple
+from rdfalchemy import rdfSubject, rdfSingle, rdfMultiple, rdfContainer
 from rdfalchemy.orm import mapper
 from rdflib import ConjunctiveGraph, Namespace, Literal, BNode, URIRef
 
@@ -29,6 +29,7 @@ class Issue(rdfSubject):
     title = rdfSingle(DC['title'])
     pubdate = rdfSingle(DCTERMS.issued)
     volume = rdfSingle(PRISM.volume)
+    articles = rdfContainer(PRISM.hasArticle)
     #coveer
 
 class Article(rdfSubject):

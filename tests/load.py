@@ -23,7 +23,7 @@ nlr56 = Issue("<tag:new-left-review-issue-56,2009-04-23>")
 nlr56.periodical = nlr
 nlr56.number = 56
 nlr56.title = "New Left Review 56 March-April 2009"
-nlr56.pubdata = "2009-03-09"
+nlr56.pubdate = "2009-03-09"
 
 a1 = Article("<tag:obama-at-manassas,2009-04-23>")
 a1.title = "Obama at Manassas"
@@ -121,6 +121,7 @@ sampol.publisher = "Stichting Gerrit Kreveld"
 sampol16_4 = Issue('<tag:sampol-issue-16-04,2009-04-26>')
 sampol16_4.number = 4
 sampol16_4.volume = 16
+sampol16_4.pubdate = "01-04-2009"
 sampol16_4.title = "Samenleving & Poltiek jaargang 16, 2009, nr.4 (april)"
 
 a21 = Article("<tag:wie-op-de-rem-staat,2009-04-25>")
@@ -195,13 +196,15 @@ b1.publisher = "epo"
 b1.isbn = "9789064450624"
 b1.cover = "http://www.epo.be/covers/epo/9789064450624.jpg"
 	
-a210 = Article('<tag:boekbesprekeing-rooddruk-voor,2009-04-25>')
+a210 = Article('<tag:boekbespreking-rooddruk-voor,2009-04-25>')
 a210.title = "Boekbestpreking 'Rooddruk voor een nieuw socialisme'"
 a210.creators = ["Luc Vanneste"]
 a210.reviewOf = [b1]
 a210.abstract = "Boekbespreking: Erik de Bruyn, Berchem, epo, 2009"
 a210.sPg = 70
 a210.epg = 72
+
+sampol16_4.articles = (a21, a22, a23, a24, a25, a26, a27, a28, a29, a210)
 
 print(g.serialize(format="n3"))
 g.remove((None,None,None)) # remove all triples/clean graph
