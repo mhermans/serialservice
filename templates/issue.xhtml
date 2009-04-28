@@ -1,0 +1,42 @@
+<html 
+    xmlns:py="http://genshi.edgewall.org/"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<head>
+    <title py:content="issue.periodical.title">This is replaced.</title>
+</head>
+
+  <py:def function="opsomming(names)" class="opsomming" py:choose="">
+        <py:when test="len(names) == 1">${names}</py:when>
+        <py:when test="len(names) == 2">${names[0]} en ${names[1]}</py:when>
+        <py:otherwise test="">${', '.join(names[0:-1])} en ${names[-1]}</py:otherwise>
+  </py:def>
+
+<body>
+    
+    <xi:include href="/home/maarten/workdir/serialservice/template/header.xhtml" />
+    
+    <div class="issueInfo">
+        <span py:content="issue.periodical.title" />
+        <py:choose test="">
+            <span py:when="issue.volume and issue.number">Volume ${issue.volume}, nummer ${issue.number}</span>
+            <span py:when="issue.volume and not issue.number">Volume ${issue.volume}</span>
+            <span py:when="not issue.volume and issue.number">Nummer ${issue.number}</span>
+        <!--!span py:if="issue.volume">volume ${issue.volume}</span><span py:if="issue.number">nummer ${issue.number}</span-->
+        </py:choose>
+        <span py:if="issue.pubdate">Verschenen ${issue.pubdate}</span>
+    </div>
+
+    
+    <div class="articleInfo" py:for="a in articles">
+        <span class="articleTitle" py:content="a.title" />
+        <span py:if="a.creators">Door ${opsomming(a.creators)}</span>
+        <span py:if="a.ives">Interview met ${opsomming(a.ives)}<py:if test="a.ivrs">, door ${opsomming(a.ivrs)}</py:if>.</span>
+        <span py:if="a.sPg and a.ePg">Pagina's ${a.sPg}--${a.ePg}(${a.ePg-a.sPg})</span>
+        <span py:if="a.abstract" py:content="a.abstract[0:40]" />
+    </div>
+    
+    <xi:include href="footer.xhtml" />
+
+</body>
+</html>

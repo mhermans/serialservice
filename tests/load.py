@@ -204,7 +204,7 @@ a210.abstract = "Boekbespreking: Erik de Bruyn, Berchem, epo, 2009"
 a210.sPg = 70
 a210.epg = 72
 
-sampol16_4.articles = (a21, a22, a23, a24, a25, a26, a27, a28, a29, a210)
+#sampol16_4.articles = (a21, a22, a23, a24, a25, a26, a27, a28, a29, a210)
 
 print(g.serialize(format="n3"))
 g.remove((None,None,None)) # remove all triples/clean graph

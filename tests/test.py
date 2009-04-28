@@ -79,7 +79,6 @@ class TestBasicMapping(unittest.TestCase):
 
         self.assertEqual(6, len(self.graph))
 
-
     def testUriInitialization(self):
         self.assertEqual(0, len(self.graph))
         a = Article("<tag:test-article,2009-04-25>")
@@ -97,6 +96,13 @@ class TestBasicMapping(unittest.TestCase):
         i.periodical = p
         self.assertEqual(a.issue.periodical.title, "Periodicaltitle")
 
+    #def testIssueArticleList(self):
+    #    a = Article()
+    #    a.title = "Testtitle"
+    #    i = Issue()
+    #    a.issue = i
+    #    self.assertEqual(1, len(i.articles))
+    #    self.assertEqual("Testtitle", i.articles[0].title())
 
 class TestLoadDataMapping(unittest.TestCase):
 

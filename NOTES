@@ -34,3 +34,5 @@ TODO
 ------
 
 Issue instances zouden een articles-property moeten hebben, en Periodical instances een issues-property die een gesorteerde lijst van artikels, resp. issues deient terug te geven. Cf. http://groups.google.com/group/rdfalchemy-dev/browse_thread/thread/ad9363b7f1b275c2
+
+de rdf/rss van Ingentaconnect is heel proper http://api.ingentaconnect.com/content/brill/hm/latest?format=rss

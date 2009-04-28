@@ -29,7 +29,17 @@ class Issue(rdfSubject):
     title = rdfSingle(DC['title'])
     pubdate = rdfSingle(DCTERMS.issued)
     volume = rdfSingle(PRISM.volume)
-    articles = rdfContainer(PRISM.hasArticle)
+    #articles = rdfContainer(DCTERMS.hasPart)
+
+    #@property
+    #def articles(self):
+    #    """"Return the articles in this issue"""
+        #for s, p, o in self.db.triples((None, None, None)):
+        #    print s
+   #     return list(self.db.subjects(predicate=DC.isPartOf, object=self.resUri))
+        #return len(self.db)
+
+    # zie http://groups.google.com/group/rdfalchemy-dev/browse_thread/thread/ad9363b7f1b275c2/92672eef06a8ac03
     #coveer
 
 class Article(rdfSubject):
@@ -108,27 +118,19 @@ def testTemplate():
 
     graph = rdfSubject.db = ConjunctiveGraph()
     graph.parse('/home/maarten/workdir/serialservice/data/capitalclass97.ttl', format="n3")
-    j = Periodical.get_by(issn="0309-8168")
+    #graph.parse('/home/maarten/workdir/serialservice/data/dump.ttl', format="n3")
+    i = Issue.get_by(number=97)
+    #j = Periodical.get_by(issn="0309-8168")
     a = Article()
 
     from genshi.template import MarkupTemplate
-    t = """
-    <html xmlns:py="http://genshi.edgewall.org/">
-    <head>
-        <title py:content="journal.title">This is replaced.</title>
-    </head>
-    <body>
-        <p>Table of contents:</p>
-        <ul>
-            <li py:for="article in articles">
-                Title: ${article.title}s
-            </li>
-        </ul>
-    </body>
-    </html>
-    """
+    from genshi.output import encode
+    f = open('/home/maarten/workdir/serialservice/templates/issue.xhtml')
+    t = f.read()
+    f.close()
     tmpl = MarkupTemplate(t)
-    stream = tmpl.generate(journal=j, articles=a.ClassInstances())
+    stream = tmpl.generate(issue=i, articles=a.ClassInstances())
+    #stream = encode(stream)
     print stream.render('xhtml')
 
 
