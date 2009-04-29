@@ -1,0 +1,3 @@
+include serialservice/config/deployment.ini_tmpl
+recursive-include serialservice/public *
+recursive-include serialservice/templates *
