@@ -3,7 +3,22 @@
     xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>    
     <title py:content="issue.periodical.title">This is replaced.</title>
+
+<style type="text/css">
+.articleInfo {
+    background-color: #ccc;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+</style>
+
+
+
+
+
+
 </head>
 
   <py:def function="opsomming(names)" class="opsomming" py:choose="">
@@ -12,28 +27,36 @@
         <py:otherwise test="">${', '.join(names[0:-1])} en ${names[-1]}</py:otherwise>
   </py:def>
 
+<py:def function="bookReview(books)">
+     <div class="bookInfo" py:for="b in books">
+        <span py:content="b.title" />
+        <span py:if="b.creators">Door ${opsomming(b.creators)}</span>
+    </div>
+</py:def>
+    
 <body>
     
     <xi:include href="/home/maarten/workdir/serialservice/template/header.xhtml" />
     
     <div class="issueInfo">
-        <span py:content="issue.periodical.title" />
+        <div py:content="issue.periodical.title" />
         <py:choose test="">
-            <span py:when="issue.volume and issue.number">Volume ${issue.volume}, nummer ${issue.number}</span>
-            <span py:when="issue.volume and not issue.number">Volume ${issue.volume}</span>
-            <span py:when="not issue.volume and issue.number">Nummer ${issue.number}</span>
-        <!--!span py:if="issue.volume">volume ${issue.volume}</span><span py:if="issue.number">nummer ${issue.number}</span-->
+            <div py:when="issue.volume and issue.number">Volume ${issue.volume}, nummer ${issue.number}</div>
+            <div py:when="issue.volume and not issue.number">Volume ${issue.volume}</div>
+            <div py:when="not issue.volume and issue.number">Nummer ${issue.number}</div>
+        <!--!div py:if="issue.volume">volume ${issue.volume}</div><div py:if="issue.number">nummer ${issue.number}</div-->
         </py:choose>
-        <span py:if="issue.pubdate">Verschenen ${issue.pubdate}</span>
+        <div py:if="issue.pubdate">Verschenen ${issue.pubdate}</div>
     </div>
 
     
     <div class="articleInfo" py:for="a in articles">
-        <span class="articleTitle" py:content="a.title" />
-        <span py:if="a.creators">Door ${opsomming(a.creators)}</span>
-        <span py:if="a.ives">Interview met ${opsomming(a.ives)}<py:if test="a.ivrs">, door ${opsomming(a.ivrs)}</py:if>.</span>
-        <span py:if="a.sPg and a.ePg">Pagina's ${a.sPg}--${a.ePg}(${a.ePg-a.sPg})</span>
-        <span py:if="a.abstract" py:content="a.abstract[0:40]" />
+        <div class="articleTitle" py:content="a.title" />
+        <div py:if="a.creators">Door ${opsomming(a.creators)}</div>
+        <div py:if="a.ives">Interview met ${opsomming(a.ives)}<py:if test="a.ivrs">, door ${opsomming(a.ivrs)}</py:if>.</div>
+        <div py:if="a.sPg and a.ePg">Pagina's ${a.sPg}--${a.ePg}(${a.ePg-a.sPg})</div>
+        <div py:if="a.abstract" py:content="a.abstract[0:40]" />
+        <!--!py:if test="a.reviewOf">${bookReview(a.reviewOf)}</py:if-->
     </div>
     
     <xi:include href="footer.xhtml" />

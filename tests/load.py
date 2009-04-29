@@ -18,6 +18,7 @@ BIBO = Namespace('http://purl.org/ontology/bibo/')
 nlr = Periodical("<http://rdf.freebase.com/rdf/en.new_left_review>")
 nlr.title = "New Left Review"
 nlr.issn = "0028-6060"
+nlr.shortTitle = "nlr"
 
 nlr56 = Issue("<tag:new-left-review-issue-56,2009-04-23>")
 nlr56.periodical = nlr
@@ -116,6 +117,7 @@ sampol = Periodical('<urn:issn:1372-0740>')
 sampol.title = "Samenleving en Politiek"
 sampol.issn = "1372-0740"
 sampol.publisher = "Stichting Gerrit Kreveld"
+sampol.shortTitle = "sampol"
 
 
 sampol16_4 = Issue('<tag:sampol-issue-16-04,2009-04-26>')
@@ -123,6 +125,7 @@ sampol16_4.number = 4
 sampol16_4.volume = 16
 sampol16_4.pubdate = "01-04-2009"
 sampol16_4.title = "Samenleving & Poltiek jaargang 16, 2009, nr.4 (april)"
+sampol16_4.periodical = sampol
 
 a21 = Article("<tag:wie-op-de-rem-staat,2009-04-25>")
 a21.title = "Wie op de rem staat, geraakt niet vooruit"
@@ -131,6 +134,7 @@ a21.creators = ["Jan de Zutter"]
 a21.abstract = "Als we de peilingen mogen geloven - en dat mogen we beslist niet - krijgt links in Vlaanderen op 7 juni een oplawaai van jewelste. Aan de halte van een nieuw Vlaams bestuur moeten sp.a en Groen! een lange rij centrumrechtse, populistische, rechtse en radicaal-rechtse partijen laten voorgaan. Zoals het er nu uitziet, zal links op de volgende bus moeten wachten. Als die nog komt. Want rechts Vlaanderen zal ongetwijfeld met genoegen gebruik maken van publieke diensten om ze daarna met evenveel plezier op een streng dieet te zetten. We zien het vandaag gebeuren met de reddingsoperaties voor de banken en de steunmaatregelen voor de economie. In tegenstelling tot de VS, waar een minderheid die hard republikeinen tenminste het fatsoen had te leven naar hun mythe van de vrije markt en dus overheidssteun publiekelijk afwezen, is er in Europa amper een liberaal te vinden die niet gretig het handje uitsteekt om te kunnen eten uit de ruif van de gemeenschap. Na de maaltijd wordt er steevast semantisch nagetafeld over het onderscheid tussen de sterke overheid en de vette overheid. Voor de steunmaatregelen was een sterke overheid noodzakelijk, na de maaltijd wordt er geschamperd over de veel te vette overheid. Zo weinig respect voor de solidariteit die gewone mensen opbrengen via de publieke dienstverlening werd zelden vertoond. Een mens zou in deze discussie op z'n minst een vorm van wederkerigheid mogen verwachten."
 a21.sPg = 1
 a21.ePg = 3
+a21.issue = sampol16_4
 
 a22 = Article('<tag:de-efficiente-overheid,2009-04-25>')
 a22.title = "De efficiënte overheid geanalyseerd"
@@ -139,6 +143,7 @@ a22.auStr = "Maarten Luts, Annie Hondeghem"
 a22.abstract = u"Doordat werkgeversorganisaties, gekleurde denktanks en ook de media het efficiëntiedebat in belangrijke mate hebben weten te monopoliseren, is het debat omtrent de efficiënte overheid in een taboesfeer terechtgekomen. Willen we onze overheid werkelijk klaarstomen voor 2020, dan moeten de oogkleppen afgenomen worden en moet er dringend een gefundeerd debat plaatsvinden over de efficiënte overheid. De statistieken omtrent de overheidsomvang onderstrepen overigens de noodzaak om de personeelsaantallen van dit debat deel te laten uitmaken."
 a22.sPg = 4
 a22.ePg = 14
+a22.issue = sampol16_4
 	
 a23 = Article('<tag:sociaaldemocraten-en-populisme,2009-04-25>')
 a23.title = "Sociaaldemocraten en populisme. Kloven en bruggen"
@@ -146,6 +151,7 @@ a23.creators = ["Maarten Van Alstein"]
 a23.abstract = "Het populisme eist in de hedendaagse politiek een belangrijke rol voor zich op. In zijn opmerkelijke essay over dit fenomeen beschrijft David Van Reybrouck het succes van populistische politici en partijen in het licht van de diploma- en cultuurkloof in onze samenleving, de nieuwe maatschappelijke breuklijn. In het populisme herkent hij de stem van laaggeschoolden van wie de betrokkenheid bij de democratie en de samenleving onder druk is komen te staan. Van Reybrouck wil deze stem ernstig nemen, en daarom pleit hij niet voor minder, maar voor meer en beter populisme. Hier wordt de vraag gesteld hoe sociaaldemocraten moeten omgaan met het betoog van David Van Reybrouck."
 a23.sPg = 15
 a23.ePg = 23
+a23.issue = sampol16_4
 
 a24 = Article('<tag:frank-van-massenhoven,2009-04-25>')
 a24.title = "Frank Van Massenhoven: 'Word weer de regisseur van je eigen leven'"
@@ -154,11 +160,13 @@ a24.ives = ["Frank Van Massenhoven"]
 a24.abstract = "Twee jaar geleden werd hij Overheidsmanager van het Jaar en vandaag leidt hij een federale overheidsdienst met tevreden ambtenaren die hun werkuren zelf regelen, thuis kunnen werken en trots zijn op hun radicaal vernieuwde dienst. Heeft Frank Van Massenhove ontdekt hoe je overheidsdiensten de 21ste eeuw kunt inloodsen?"
 a24.sPg = 24
 a24.ePg = 32
+a24.issue = sampol16_4
 	
 a25 = Article('<tag:erik-meynen,2009-04-25>')
 a25.title = "Erik Meynen (Portfolio)"
 a25.sPg = 33
 a25.ePg = 40
+a25.issue = sampol16_4
 	
 a26 = Article('<tag:het-beroepenhuis,2009-04-25>')
 a26.title = "Het Beroepenhuis (Project in de kijker)"
@@ -166,6 +174,7 @@ a26.creators = ["Mil Kooyman"]
 a26.abstract = "Er is in de voorbije regeerperiode waarschijnlijk geen toespraak geweest van minister Vandenbroucke waarin hij niet minstens een paar keer de woorden talenten en talentontwikkeling heeft laten vallen. Ondertussen is nagenoeg iedereen er van overtuigd dat de talenten van jongeren het belangrijkste criterium moet zijn voor hun studie- en beroepskeuze. Talentontwikkeling in ons onderwijs is dan ook meer dan noodzakelijk. Sinds 1999 timmert Het Beroepenhuis aan de (talenten)weg en op 4 maart 2005 gingen de deuren van het huis effectief open. Een schot in de roos."
 a26.sPg = 41
 a26.ePg = 43
+a26.issue = sampol16_4
 	
 a27 = Article('<tag:politieke-peilingen,2009-04-25>')
 a27.title = "Politieke peilingen in de media: fictie of frictie?"
@@ -174,6 +183,7 @@ a27.creators = ["Jaak Billiet", "Nathalie Sonck"]
 a27.abstract = "Peilingen vertalen individuele opvattingen in een collectieve publieke opinie, maar indien dit op een gebrekkige en vertekende wijze gebeurt, ontstaat een misleidend beeld dat afwijkt van de werkelijke zorgen van de bevolking.  Door het rapporteren van deze peilingen in de media wordt fictie gecreëerd."
 a27.sPg = 44
 a27.ePg = 53
+a27.issue = sampol16_4
 
 a28 = Article('<tag:outplacement-take,2009-04-25>')
 a28.title = "Outplacement: take the money and run"
@@ -181,6 +191,7 @@ a28.creators = ["Philippe Diepvents"]
 a28.abstract = "'Herstel het vertrouwen' is de gemeenschappelijke titel voor de relanceplannen die de maatregelen bundelen die de federale en Vlaamse overheden zullen nemen om de effecten van de financiële crisis in ons land te temperen. Heel wat van deze maatregelen moeten nog geconcretiseerd en in de praktijk omgezet worden. De voorbije maanden was vooral de discussie rond het afschaffen van de doelgroepenvermindering, die vanuit het uitzonderlijk akkoord van de sociale partners werd overgenomen, brandend actueel. De plannen bevatten echter uiteraard nog veel meer maatregelen, die op initiatief van de politieke overheden werden genomen. Met dit artikel willen we de aandacht vestigen op een aantal elementen uit de relanceplannen die tot nog toe onder de radar bleven. Met name gaat het over die bijsturingen die te maken hebben met de regelgeving rond outplacement."
 a28.sPg = 54
 a28.ePg = 60
+a28.issue = sampol16_4
 	
 a29 = Article('<tag:met-huidig-beleid,2009-04-25>')
 a29.title = "Met huidig beleid raakt voedselcrisis niet opgelost!"
@@ -188,6 +199,7 @@ a29.creators = ["Thierry Kesteloot"]
 a29.abstract = "Stijgende voedselprijzen en voedselrellen in vele steden in ontwikkelingslanden haalden de pers in 2008. Deze crisis ging niet onopgemerkt voorbij. De media-aandacht vertaalde zich in een buitengewone politieke belangstelling. Maar sindsdien werd de voedselcrisis opgevolgd door de financiële en economische crisis. De voedselprijzen duiken in elkaar, en staan veel lager dan één jaar geleden. Is het einde van de voedselcrisis dichterbij gekomen? Niet met het bestaande beleid, aangezien het mede aan de oorzaak van de crisis ligt."
 a29.sPg = 61
 a29.ePg = 69
+a29.issue = sampol16_4
 	
 b1 = Book('<urn:isbn:9789064450624>')
 b1.title = "Rooddruk voor een nieuw socialisme"
@@ -203,7 +215,7 @@ a210.reviewOf = [b1]
 a210.abstract = "Boekbespreking: Erik de Bruyn, Berchem, epo, 2009"
 a210.sPg = 70
 a210.epg = 72
-
+a210.issue = sampol16_4
 #sampol16_4.articles = (a21, a22, a23, a24, a25, a26, a27, a28, a29, a210)
 
 print(g.serialize(format="n3"))

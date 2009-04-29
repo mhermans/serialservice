@@ -35,4 +35,26 @@ TODO
 
 Issue instances zouden een articles-property moeten hebben, en Periodical instances een issues-property die een gesorteerde lijst van artikels, resp. issues deient terug te geven. Cf. http://groups.google.com/group/rdfalchemy-dev/browse_thread/thread/ad9363b7f1b275c2
 
+Initialiseren via uri geeft geen rdf:type, itt. via Bnode. init subclassen? Andere oplossing: patchen DONE
+
+Genshi verwacht unicode intern http://genshi.edgewall.org/wiki/GenshiFaq#WhydoesGenshiraiseaUnicodeDecodeErrorwhenItrytorendernon-ASCIIstrings 
+Het handigste is als dit bij input zeker unicode is (rdflib of rdfaclchemy); ook rekening houden met python3 aanpassingen.
+Snap het niet echt, maar als je je terminal redirection vermijd (ascii default), werkt alles blijkbaar. DONE
+
+
 de rdf/rss van Ingentaconnect is heel proper http://api.ingentaconnect.com/content/brill/hm/latest?format=rss
+gebruikten rss:items -> Seq voor volgorde articles
+
+* Met een rdf:Seq oplossen
+* Met een property per article ...
+    + ... rdfMultiple subclassen zodat i.articles in volgorde teruggeeft
+    + ... aparte functie order(someList) die voor personen, issues, articles, ed. logisch volgordes geeft.
+    (telkens sorteren op pg-nummer->gaat niet altijd (bv. electr tijdschrift) -> custom prop).
+
+ov:numberOfItems
+ov:itemSeqNumber
+
+http://serials.progsite.org/sampol/16/04/5
+http://serials.progsite.org/nlr/0/56/3
+http://who.progsite/imavo
+http://who.progsite/freddy-de-pauw

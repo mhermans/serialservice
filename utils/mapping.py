@@ -18,6 +18,7 @@ class Periodical(rdfSubject):
     title = rdfSingle(DC['title'])
     issn = rdfSingle(BIBO.issn)
     publisher = rdfSingle(DC['publisher'])
+    shortTitle = rdfSingle(BIBO['shortTitle'])
     #publisher = rdfSingle(DC.publisher,range_type=FOAF.Organization)
     #label = rdfSingle(RDFS.label)
     #issues = rdfMultiple(
@@ -117,22 +118,33 @@ def testTemplate():
 
 
     graph = rdfSubject.db = ConjunctiveGraph()
-    graph.parse('/home/maarten/workdir/serialservice/data/capitalclass97.ttl', format="n3")
-    #graph.parse('/home/maarten/workdir/serialservice/data/dump.ttl', format="n3")
-    i = Issue.get_by(number=97)
-    #j = Periodical.get_by(issn="0309-8168")
-    a = Article()
-
+    fn1 = "/home/maarten/workdir/serialservice/data/capitalclass97.ttl"
+    fn2 = "/home/maarten/workdir/serialservice/data/dump.ttl"
+    graph.parse(fn1, format="n3")
+    graph.parse(fn2, format="n3")
+    #p = Periodical.get_by(issn="1372-0740")
+    p = Periodical.get_by(shortTitle="capclass")
+    v = None
+    n = 97
+    i = Issue.filter_by(periodical=p.resUri)
+    i = list(i)
+    if len(i) == 1:
+        i = list(i)[0]
+    alist = Article.filter_by(issue=i.resUri)
     from genshi.template import MarkupTemplate
     from genshi.output import encode
     f = open('/home/maarten/workdir/serialservice/templates/issue.xhtml')
     t = f.read()
     f.close()
     tmpl = MarkupTemplate(t)
-    stream = tmpl.generate(issue=i, articles=a.ClassInstances())
+    #filter_by(issue=i) werkt niet i.resUri wel. Filtering via chained descriptors zou leuk zijn: filter_by(issue.number=56, issue.periodical=p)
+    #print list(alist)
+    stream = tmpl.generate(issue=i, articles=alist)
     #stream = encode(stream)
-    print stream.render('xhtml')
-
+    html = stream.render('xhtml')
+    o = file("out.html", 'w')
+    o.write(html)
+    o.close()
 
 
 if __name__ == "__main__":

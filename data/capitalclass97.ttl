@@ -11,7 +11,8 @@
 	a 		        bibo:Periodical ;
     bibo:issn	    "0309-8168";
     dc:publisher    "Conference of Socialist Economists" ;
-	dc:title 	    "Capital & Class" .
+	dc:title 	    "Capital & Class" ;
+    bibo:shortTitle "capclass" .
 
 <tag:capital-and-class-issue-97,2009-04-22>
     dc:title        "Capital & Class, Spring 2009 issue" ;
