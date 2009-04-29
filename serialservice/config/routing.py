@@ -5,7 +5,7 @@ may take precedent over the more generic routes. For more information
 refer to the routes manual at http://routes.groovie.org/docs/
 """
 from pylons import config
-from routes import Mapper
+from routes import Mapper, url_for
 
 def make_map():
     """Create, configure and return the routes Mapper"""
@@ -22,5 +22,8 @@ def make_map():
 
     map.connect('/{controller}/{action}')
     map.connect('/{controller}/{action}/{id}')
+
+    map.connect('mapping1', '/serials', controller='pages', action='index' )
+    map.connect('mapping2', '/serials/:shortTitle/:volume/:number', controller='pages', action='issue')
 
     return map

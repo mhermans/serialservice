@@ -4,7 +4,7 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>    
-    <title py:content="issue.periodical.title">This is replaced.</title>
+    <title py:content="c.issue.periodical.title">This is replaced.</title>
 
 <style type="text/css">
 .articleInfo {
@@ -36,30 +36,30 @@
     
 <body>
     
-    <xi:include href="/home/maarten/workdir/serialservice/template/header.xhtml" />
+    <!--!xi:include href="/home/maarten/workdir/serialservice/template/header.xhtml" /-->
     
     <div class="issueInfo">
-        <div py:content="issue.periodical.title" />
+        <div py:content="c.issue.periodical.title" />
         <py:choose test="">
-            <div py:when="issue.volume and issue.number">Volume ${issue.volume}, nummer ${issue.number}</div>
-            <div py:when="issue.volume and not issue.number">Volume ${issue.volume}</div>
-            <div py:when="not issue.volume and issue.number">Nummer ${issue.number}</div>
+            <div py:when="c.issue.volume and c.issue.number">Volume ${c.issue.volume}, nummer ${c.issue.number}</div>
+            <div py:when="c.issue.volume and not c.issue.number">Volume ${c.issue.volume}</div>
+            <div py:when="not c.issue.volume and c.issue.number">Nummer ${c.issue.number}</div>
         <!--!div py:if="issue.volume">volume ${issue.volume}</div><div py:if="issue.number">nummer ${issue.number}</div-->
         </py:choose>
-        <div py:if="issue.pubdate">Verschenen ${issue.pubdate}</div>
+        <div py:if="c.issue.pubdate">Verschenen ${c.issue.pubdate}</div>
     </div>
 
     
-    <div class="articleInfo" py:for="a in articles">
+    <div class="articleInfo" py:for="a in c.articles">
         <div class="articleTitle" py:content="a.title" />
         <div py:if="a.creators">Door ${opsomming(a.creators)}</div>
-        <div py:if="a.ives">Interview met ${opsomming(a.ives)}<py:if test="a.ivrs">, door ${opsomming(a.ivrs)}</py:if>.</div>
+        <div py:if="a.ives">Interview met ${opsomming(a.ives)}<py:if test="a.ivrs"> door ${opsomming(a.ivrs)}</py:if>.</div>
         <div py:if="a.sPg and a.ePg">Pagina's ${a.sPg}--${a.ePg}(${a.ePg-a.sPg})</div>
         <div py:if="a.abstract" py:content="a.abstract[0:40]" />
         <!--!py:if test="a.reviewOf">${bookReview(a.reviewOf)}</py:if-->
     </div>
     
-    <xi:include href="footer.xhtml" />
+    <!--!xi:include href="footer.xhtml" /-->
 
 </body>
 </html>
