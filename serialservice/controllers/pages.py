@@ -5,6 +5,11 @@ from pylons.controllers.util import abort, redirect_to
 
 from serialservice.lib.base import BaseController, render
 
+import sys
+sys.path.append('/home/maarten/workdir/serialservice/utils/')
+from mapping import Periodical, Issue, Article
+
+
 log = logging.getLogger(__name__)
 
 class PagesController(BaseController):
@@ -22,10 +27,6 @@ class PagesController(BaseController):
 
         #via globals: g.graph = rdfSubject.db
         #zie serialservice/lib/app_globals.py.
-        
-        import sys
-        sys.path.append('/home/maarten/workdir/serialservice/utils/')
-        from mapping import Periodical, Issue, Article
 
         p = Periodical.get_by(shortTitle=s)
         i = Issue.filter_by(periodical=p.resUri)
@@ -39,4 +40,16 @@ class PagesController(BaseController):
         
         c.issue = i
         c.articles = alist
-        return render("issue.xhtml")
+        c.title = i.periodical.title 
+        c.bodySection = "issue"
+        return render("base.xml")
+
+    def periodical(self, shortTitle):
+        s = shortTitle
+        
+        c.periodical = Periodical.get_by(shortTitle=s)
+        c.issues = Issue.filter_by(periodical=c.periodical.resUri)
+        
+        c.title = c.periodical.title        
+        c.bodySection = "periodical"
+        return render('base.xml')

@@ -1,0 +1,27 @@
+<html 
+    xmlns:py="http://genshi.edgewall.org/"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>    
+    <title py:content="c.title">This is replaced.</title>
+
+<style type="text/css">
+.articleInfo {
+    background-color: #ccc;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Progressive Serial Service</h1>
+
+<xi:include href="${c.bodySection}.xml"/> 
+
+</body>
+
+</html>

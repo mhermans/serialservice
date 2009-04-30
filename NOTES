@@ -56,6 +56,9 @@ ov:itemSeqNumber
 
 "If you need variables, functions, or classes for use in multiple templates, you can put definitions in lib/helpers.py. Those definitions will be available in your templates in the h variable." -> hier die sorteerfunctie
 
+Een template-functie schrijven die een mooie issue-title genereerd.
+
+Babel gebruiken om datum van YYYY-MM-DD naar lokaal formaat te krijgen.
 
 http://serials.progsite.org/sampol/16/04/5
 http://serials.progsite.org/nlr/0/56/3
