@@ -23,6 +23,7 @@ def make_map():
     map.connect('/{controller}/{action}')
     map.connect('/{controller}/{action}/{id}')
 
+    map.connect('mapping1', '', controller='pages', action='index' )
     map.connect('mapping1', '/serials', controller='pages', action='serials' )
     map.connect('mapping1', '/serials/:shortTitle', controller='pages', action='periodical' )
     map.connect('mapping2', '/serials/:shortTitle/:volume/:number', controller='pages', action='issue')
