@@ -5,8 +5,8 @@
     <div py:if="c.periodical.publisher" py:content="c.periodical.publisher" />
     <div py:if="c.periodical.issn" py:content="c.periodical.issn" />
 
-    <div class="issuesList" py:for="i in c.issues">
-        <div py:content="i.number" />
-    </div>
+    <ul class="issuesList" py:for="i in c.issues">
+        <li><a href="${i.locUrl}">Nummer ${i.number}</a></li>
+    </ul>
 
 </div>

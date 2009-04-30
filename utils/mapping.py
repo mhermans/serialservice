@@ -13,6 +13,9 @@ RDF = Namespace('http://www.w3.org/1999/02/22-rdf-syntax-ns#')
 RDFS =  Namespace('http://www.w3.org/2000/01/rdf-schema#')
 FOAF = Namespace('http://xmlns.com/foaf/0.1/')
 
+BASEURL = "http://localhost:5000/serials/"
+import urlparse
+
 class Periodical(rdfSubject):
     rdf_type = BIBO.Periodical
     title = rdfSingle(DC['title'])
@@ -23,6 +26,10 @@ class Periodical(rdfSubject):
     #label = rdfSingle(RDFS.label)
     #issues = rdfMultiple(
 
+    @property
+    def locUrl(self):
+        return urlparse.urljoin(BASEURL, self.shortTitle )
+
 class Issue(rdfSubject):
     rdf_type = BIBO.Issue
     number = rdfSingle(PRISM.number)
@@ -31,6 +38,16 @@ class Issue(rdfSubject):
     pubdate = rdfSingle(DCTERMS.issued)
     volume = rdfSingle(PRISM.volume)
     #articles = rdfContainer(DCTERMS.hasPart)
+    @property
+    def locUrl(self):
+        if not self.volume:
+            v = "0"
+        else:
+            v = str(self.volume)
+
+        n = str(self.number)
+
+        return urlparse.urljoin(BASEURL, '/'.join([self.periodical.shortTitle, v, n]))
 
     #@property
     #def articles(self):

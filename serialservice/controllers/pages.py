@@ -20,6 +20,38 @@ class PagesController(BaseController):
         # or, return a response
         return 'Hello World'
 
+    def serials(self):
+        
+        c.periodicals = Periodical.ClassInstances()
+        c.title = "Serials"
+        c.bodySection = "serials"
+        return render('base.xml')
+
+    def periodical(self, shortTitle):
+        s = shortTitle
+        
+        c.periodical = Periodical.get_by(shortTitle=s)
+        c.issues = Issue.filter_by(periodical=c.periodical.resUri)
+        
+        c.title = c.periodical.title        
+        c.bodySection = "periodical"
+        return render('base.xml')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     def issue(self, shortTitle, volume, number):
         s = shortTitle
         v = volume
@@ -44,12 +76,12 @@ class PagesController(BaseController):
         c.bodySection = "issue"
         return render("base.xml")
 
-    def periodical(self, shortTitle):
-        s = shortTitle
-        
-        c.periodical = Periodical.get_by(shortTitle=s)
-        c.issues = Issue.filter_by(periodical=c.periodical.resUri)
-        
-        c.title = c.periodical.title        
-        c.bodySection = "periodical"
-        return render('base.xml')
+
+
+
+
+
+
+
+
+

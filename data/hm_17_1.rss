@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <rdf:RDF
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:admin="http://webns.net/mvcb/"
+ xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/">
+ <channel rdf:about="http://api.ingentaconnect.com/content/brill/hm/latest?format=rss">
+ <title>Latest Issue of Historical Materialism</title>
+ <link>http://www.ingentaconnect.com/content/brill/hm/latest</link>
+ <description>RSS feed of the most recently published issue of Historical Materialism</description>
+ <image rdf:resource="http://www.ingentaconnect.com/journal-logos/brill/hm.gif"/>
+ <dc:description>RSS feed of the most recently published issue of Historical Materialism</dc:description>
+ <dc:title>Latest Issue of Historical Materialism RSS Feed</dc:title>
+ <dc:date>Thu Apr 30 02:25:04 GMT+00:00 2009</dc:date>
+ <admin:generatorAgent rdf:resource="http://www.ingentaconnect.com"/>
+ <admin:errorReportsTo rdf:resource="mailto:help@ingentaconnect.com"/>
+ <sy:updatePeriod>daily</sy:updatePeriod>
+ <sy:updateFrequency>2</sy:updateFrequency>
+ <sy:updateBase>2004-01-01T07:00+00:00</sy:updateBase>
+ <items>
+ <rdf:Seq>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00001"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00002"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00003"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00004"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00005"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00006"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00007"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00008"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00009"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00010"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00011"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00012"/>
+ <rdf:li rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00013"/>
+ </rdf:Seq>
+ </items>
+ <dc:publisher>BRILL</dc:publisher>
+ <dc:rights>&amp;#169; Thu Apr 30 02:25:04 GMT+00:00 2009 BRILL</dc:rights>
+ <prism:publicationName>Historical Materialism</prism:publicationName>
+ <prism:distributor>IngentaConnect</prism:distributor>
+ <prism:coverDisplayDate>2009</prism:coverDisplayDate>
+ <prism:isPartOf rdf:resource="urn:issn:1465-4466"/>
+ <prism:issn>1465-4466</prism:issn>
+ </channel>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00001">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00001</link>
+ <title>Subalternity and Language: Overcoming the Fragmentation of Common Sense</title>
+ <dc:title>Subalternity and Language: Overcoming the Fragmentation of Common Sense</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920609X399191"/>
+ <dc:format>application/pdf</dc:format>
+ <dc:creator>Green, Marcus E.</dc:creator>
+ <dc:creator>Ives, Peter</dc:creator>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Marcus E.</foaf:givenname>
+ <foaf:family_name>Green</foaf:family_name>
+ <foaf:name>Green, Marcus E.</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Peter</foaf:givenname>
+ <foaf:family_name>Ives</foaf:family_name>
+ <foaf:name>Ives, Peter</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>3</prism:startingPage>
+ <prism:endingPage>30</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Articles</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00002">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00002</link>
+ <title>The Longue Duree of the French Bourgeoisie</title>
+ <dc:title>The Longue Duree of the French Bourgeoisie</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920609X399209"/>
+ <dc:format>application/pdf</dc:format>
+ <dc:creator>Heller, Henry</dc:creator>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Henry</foaf:givenname>
+ <foaf:family_name>Heller</foaf:family_name>
+ <foaf:name>Heller, Henry</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>31</prism:startingPage>
+ <prism:endingPage>59</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Articles</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00003">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00003</link>
+ <title>Capitalism as Religion: Walter Benjamin and Max Weber</title>
+ <dc:title>Capitalism as Religion: Walter Benjamin and Max Weber</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920609X399218"/>
+ <dc:format>application/pdf</dc:format>
+ <dc:creator>Lowy, Michael</dc:creator>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Michael</foaf:givenname>
+ <foaf:family_name>Lowy</foaf:family_name>
+ <foaf:name>Lowy, Michael</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>60</prism:startingPage>
+ <prism:endingPage>73</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Articles</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00004">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00004</link>
+ <title>Adorno on Education or, Can Critical Self-Reflection Prevent the Next Auschwitz?</title>
+ <dc:title>Adorno on Education or, Can Critical Self-Reflection Prevent the Next Auschwitz?</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920608X357765"/>
+ <dc:format>application/pdf</dc:format>
+ <dc:creator>Cho, Daniel K.</dc:creator>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Daniel K.</foaf:givenname>
+ <foaf:family_name>Cho</foaf:family_name>
+ <foaf:name>Cho, Daniel K.</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>74</prism:startingPage>
+ <prism:endingPage>97</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Articles</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00005">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00005</link>
+ <title>Reflections on Gewalt</title>
+ <dc:title>Reflections on Gewalt</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920609X399227"/>
+ <dc:format>application/pdf</dc:format>
+ <dc:creator>Balibar, Etienne</dc:creator>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Etienne</foaf:givenname>
+ <foaf:family_name>Balibar</foaf:family_name>
+ <foaf:name>Balibar, Etienne</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>99</prism:startingPage>
+ <prism:endingPage>125</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Reflections on Gewalt</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00006">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00006</link>
+ <title>Another kind of Gewalt: Beyond Law Re-Reading Walter Benjamin</title>
+ <dc:title>Another kind of Gewalt: Beyond Law Re-Reading Walter Benjamin</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920609X399236"/>
+ <dc:format>application/pdf</dc:format>
+ <dc:creator>Tomba, Massimiliano</dc:creator>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Massimiliano</foaf:givenname>
+ <foaf:family_name>Tomba</foaf:family_name>
+ <foaf:name>Tomba, Massimiliano</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>126</prism:startingPage>
+ <prism:endingPage>144</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Articles</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00007">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00007</link>
+ <title>The Fallacies of &#039;New Dialectics&#039; and Value-Form Theory</title>
+ <dc:title>The Fallacies of &#039;New Dialectics&#039; and Value-Form Theory</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920609X399245"/>
+ <dc:format>application/pdf</dc:format>
+ <dc:creator>Carchedi, Guglielmo</dc:creator>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Guglielmo</foaf:givenname>
+ <foaf:family_name>Carchedi</foaf:family_name>
+ <foaf:name>Carchedi, Guglielmo</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>145</prism:startingPage>
+ <prism:endingPage>169</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Interventions</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00008">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00008</link>
+ <title>Contradiction and Abstraction: A Reply to Finelli</title>
+ <dc:title>Contradiction and Abstraction: A Reply to Finelli</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920609X399254"/>
+ <dc:format>application/pdf</dc:format>
+ <dc:creator>Arthur, Christopher J.</dc:creator>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Christopher J.</foaf:givenname>
+ <foaf:family_name>Arthur</foaf:family_name>
+ <foaf:name>Arthur, Christopher J.</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>170</prism:startingPage>
+ <prism:endingPage>182</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Articles</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00009">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00009</link>
+ <title>Revolution in Psychology: Alienation to Emancipation The Lacanian Left: Psychoanalysis, Theory, and Politics</title>
+ <dc:title>Revolution in Psychology: Alienation to Emancipation The Lacanian Left: Psychoanalysis, Theory, and Politics</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920609X399263"/>
+ <dc:format>application/pdf</dc:format>
+ <dc:creator>Noys, Benjamin</dc:creator>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Benjamin</foaf:givenname>
+ <foaf:family_name>Noys</foaf:family_name>
+ <foaf:name>Noys, Benjamin</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>183</prism:startingPage>
+ <prism:endingPage>190</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Review Articles</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00010">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00010</link>
+ <title>Die radikale Linke als Massenbewegung. Kommunisten in Harburg-Wilhelmsburg 19181933</title>
+ <dc:title>Die radikale Linke als Massenbewegung. Kommunisten in Harburg-Wilhelmsburg 19181933</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920609X399272"/>
+ <dc:format>application/pdf</dc:format>
+ <dc:creator>Bois, Marcel</dc:creator>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Marcel</foaf:givenname>
+ <foaf:family_name>Bois</foaf:family_name>
+ <foaf:name>Bois, Marcel</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>191</prism:startingPage>
+ <prism:endingPage>200</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Review Articles</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00011">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00011</link>
+ <title>Capitalists and Conquerors Teaching Against Global Capitalism and the New Imperialism Rage and Hope: Interviews with Peter McLaren on War, Imperialism, and Critical Pedagogy</title>
+ <dc:title>Capitalists and Conquerors Teaching Against Global Capitalism and the New Imperialism Rage and Hope: Interviews with Peter McLaren on War, Imperialism, and Critical Pedagogy</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920608X357828"/>
+ <dc:format>application/pdf</dc:format>
+ <dc:creator>Lewis, Tyson Edward</dc:creator>
+ <foaf:maker>
+ <foaf:Person>
+ <foaf:givenname>Tyson Edward</foaf:givenname>
+ <foaf:family_name>Lewis</foaf:family_name>
+ <foaf:name>Lewis, Tyson Edward</foaf:name>
+ </foaf:Person>
+ </foaf:maker>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>201</prism:startingPage>
+ <prism:endingPage>208</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Review Articles</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00012">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00012</link>
+ <title>Notes on Contributors</title>
+ <dc:title>Notes on Contributors</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920609X399281"/>
+ <dc:format>application/pdf</dc:format>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>209</prism:startingPage>
+ <prism:endingPage>211</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Notes on Contributors</prism:section>
+ </item>
+ <item rdf:about="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00013">
+ <link>http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001/art00013</link>
+ <title>Back Issues</title>
+ <dc:title>Back Issues</dc:title>
+ <dc:identifier rdf:resource="doi:10.1163/156920608X388059"/>
+ <dc:format>application/pdf</dc:format>
+ <prism:volume>17</prism:volume>
+ <prism:number>1</prism:number>
+ <prism:startingPage>213</prism:startingPage>
+ <prism:endingPage>223</prism:endingPage>
+ <prism:isPartOf rdf:resource="http://www.ingentaconnect.com/content/brill/hm/2009/00000017/00000001"/>
+ <prism:section>Back Issues</prism:section>
+ </item>
+ </rdf:RDF>
