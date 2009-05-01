@@ -5,6 +5,10 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>    
     <title py:content="c.title">This is replaced.</title>
+    <!-- Combo-handled YUI CSS files: --> 
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" />
+
+
 
 <style type="text/css">
 .articleInfo {
@@ -18,16 +22,16 @@
 
 <body>
 
-<div id="header">
+<div id="doc2">                 
+    <div id="hd">
+        <h1>Progressive Serial Service</h1>
+    </div>
+    
+    <xi:include href="${c.bodySection}.xml"/> 
 
-<h1>Progressive Serial Service</h1>
-
-</div>
-
-<xi:include href="${c.bodySection}.xml"/> 
-
-<div id="footer">
-<p>(valid XHTML+RDFa)</p>
+    <div id="ft">
+        <p>(valid XHTML+RDFa)</p>
+    </div>
 </div>
 </body>
 

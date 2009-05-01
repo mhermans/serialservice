@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div id="newBody" xmlns:py="http://genshi.edgewall.org/">
+    
+    <h2>Recente toevoegingen:</h2>
+    
+    <ul class="issuesList" py:for="i in c.issues">
+        <li>${i.pubdate}: <a href="${i.locUrl}">${i.periodical.title}, ${i.number}</a></li>
+    </ul>
+
+</div>

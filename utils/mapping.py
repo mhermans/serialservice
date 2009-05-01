@@ -49,6 +49,9 @@ class Issue(rdfSubject):
 
         return urlparse.urljoin(BASEURL, '/'.join([self.periodical.shortTitle, v, n]))
 
+
+
+
     #@property
     #def articles(self):
     #    """"Return the articles in this issue"""
@@ -73,6 +76,20 @@ class Article(rdfSubject):
     ivrs = rdfMultiple(BIBO.interviewer)
     ives = rdfMultiple(BIBO.interviewee)
     reviewOf = rdfMultiple(BIBO.reviewOf)
+
+    def __lt__(self, other):
+        if self.sPg < other.sPg:
+            return True
+        else:
+            return False
+
+    def __gt__(self, other):
+        if self.sPg > other.sPg:
+            return True
+        else:
+            return False
+
+
 
 #class ArticleInstance(rdfSubject)
 #    accessRights

@@ -25,7 +25,7 @@
     </div>
 
     
-    <div class="articleInfo" py:for="a in c.articles">
+    <div class="articleInfo" py:for="a in sorted(c.articles)">
         <div class="articleTitle" py:content="a.title" />
         <div py:if="a.creators">Door ${opsomming(a.creators)}</div>
         <div py:if="a.ives">Interview met ${opsomming(a.ives)}<py:if test="a.ivrs"> door ${opsomming(a.ivrs)}</py:if>.</div>

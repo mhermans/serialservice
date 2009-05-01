@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div id="journalBody" xmlns:py="http://genshi.edgewall.org/">
 
-    <div py:content="c.periodical.title" />
+<div id="journalBody" xmlns:py="http://genshi.edgewall.org/">
+    
+
+    <h2 py:content="c.periodical.title" />
+
     <div py:if="c.periodical.publisher" py:content="c.periodical.publisher" />
     <div py:if="c.periodical.issn" py:content="c.periodical.issn" />
+    
+    <h2>Recente nummers:</h2>
 
     <ul class="issuesList" py:for="i in c.issues">
         <li><a href="${i.locUrl}">Nummer ${i.number}</a></li>

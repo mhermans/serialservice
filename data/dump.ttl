@@ -1,0 +1,201 @@
+
+@prefix _3: <http://purl.org/dc/elements/1.1/>.
+@prefix _4: <http://prismstandard.org/namespaces/basic/2.0/>.
+@prefix _5: <http://purl.org/dc/terms/>.
+@prefix _6: <http://purl.org/ontology/bibo/>.
+@prefix _8: <http://open.vocab.org/terms/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+ <tag:barry-schwabsky-on-groys,2009-04-25> a _6:Article;
+     _3:creator "Barry Schwabsky";
+     _3:isPartOf <tag:new-left-review-issue-56,2009-04-23>;
+     _3:title "Barry Schwabsky on Groys, Art Power";
+     _5:abstract "Essays on aesthetics and politics, founded on the disconcerting insights of late-Soviet conceptualism.";
+     _6:reviewOf <tag:urn:isbn:9780262072922>. 
+
+ <tag:boekbespreking-rooddruk-voor,2009-04-25> a _6:Article;
+     _4:startingPage "70"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:creator "Luc Vanneste";
+     _3:isPartOf <tag:sampol-issue-16-04,2009-04-26>;
+     _3:title "Boekbestpreking 'Rooddruk voor een nieuw socialisme'";
+     _5:abstract "Boekbespreking: Erik de Bruyn, Berchem, epo, 2009";
+     _6:reviewOf <urn:isbn:9789064450624>. 
+
+ <tag:colletti-on,2009-04-23> a _6:Article;
+     _3:creator "Geoff Mann";
+     _3:isPartOf <tag:new-left-review-issue-56,2009-04-23>;
+     _3:title "Colletti on the Credit Crunch";
+     _5:abstract "What political opportunities arise from the current financial crisis? In a critical response to Robin Blackburn’s essay in NLR 50, Geoff Mann proposes the insights of Marx’s theory of value as a starting point for thinking beyond capitalist social relations—as Blackburn’s measures, he argues, do not.". 
+
+ <tag:de-efficiente-overheid,2009-04-25> a _6:Article;
+     _8:authorString "Maarten Luts, Annie Hondeghem";
+     _4:endingPage "14"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _4:startingPage "4"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:creator "Annie Hondeghem",
+         "Maarten Luts";
+     _3:isPartOf <tag:sampol-issue-16-04,2009-04-26>;
+     _3:title "De efficiënte overheid geanalyseerd";
+     _5:abstract "Doordat werkgeversorganisaties, gekleurde denktanks en ook de media het efficiëntiedebat in belangrijke mate hebben weten te monopoliseren, is het debat omtrent de efficiënte overheid in een taboesfeer terechtgekomen. Willen we onze overheid werkelijk klaarstomen voor 2020, dan moeten de oogkleppen afgenomen worden en moet er dringend een gefundeerd debat plaatsvinden over de efficiënte overheid. De statistieken omtrent de overheidsomvang onderstrepen overigens de noodzaak om de personeelsaantallen van dit debat deel te laten uitmaken.". 
+
+ <tag:erik-meynen,2009-04-25> a _6:Article;
+     _4:endingPage "40"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _4:startingPage "33"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:isPartOf <tag:sampol-issue-16-04,2009-04-26>;
+     _3:title "Erik Meynen (Portfolio)". 
+
+ <tag:feminism-capitalism,2009-04-22> a _6:Article;
+     _3:creator "Nancy Fraser";
+     _3:isPartOf <tag:new-left-review-issue-56,2009-04-23>;
+     _3:title "Feminism, Capitalism and the Cunning of History";
+     _5:abstract "Do feminism and neoliberalism share a secret affinity? Nancy Fraser on the co-option of gender politics by the ‘new spirit’ of post-Fordist capitalism, and subordination of its radical critique to a World Bank agenda. Might a neo-Keynesian shift offer prospects for socialist-feminist renewal?". 
+
+ <tag:frank-van-massenhoven,2009-04-25> a _6:Article;
+     _4:endingPage "32"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _4:startingPage "24"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:isPartOf <tag:sampol-issue-16-04,2009-04-26>;
+     _3:title "Frank Van Massenhoven: 'Word weer de regisseur van je eigen leven'";
+     _5:abstract "Twee jaar geleden werd hij Overheidsmanager van het Jaar en vandaag leidt hij een federale overheidsdienst met tevreden ambtenaren die hun werkuren zelf regelen, thuis kunnen werken en trots zijn op hun radicaal vernieuwde dienst. Heeft Frank Van Massenhove ontdekt hoe je overheidsdiensten de 21ste eeuw kunt inloodsen?";
+     _6:interviewee "Frank Van Massenhoven";
+     _6:interviewer "Jan de Zutter". 
+
+ <tag:freedoms-triumph,2009-04-23> a _6:Article;
+     _3:creator "Dylan Riley";
+     _3:isPartOf <tag:new-left-review-issue-56,2009-04-23>;
+     _3:title "Freedom's Triumph?";
+     _5:abstract "Reviving its classical definition, ‘rule of the propertyless’, Luciano Canfora recasts the story of democracy in Europe as one of successive defeats, with lessons from Louis Napoleon on the use of suffrage as legitimation for oligarchic rule. Dylan Riley assesses a remarkable historical polemic from the Italian philologist.". 
+
+ <tag:giovanni-arrighi,2009-04-22> a _6:Article;
+     _3:isPartOf <tag:new-left-review-issue-56,2009-04-23>;
+     _3:title "Giovanni Arrighi: The Winding Paths of Capital";
+     _5:abstract "The author of Long Twentieth Century and Adam Smith in Beijing, interviewed by David Harvey, on dispossession and development, capitalist crises, China’s future. The political education of a teenage factory-manager, via African liberation struggles and autonomia operaia; and influences—Braudel, Gramsci, Smith, Marx—in Arrighi’s work.";
+     _6:interviewee "Giovani Arrighi";
+     _6:interviewer "David Harvey". 
+
+ <tag:goran-therborn-on-heinsohn,2009-04-25> a _6:Article;
+     _3:creator "Göran Therborn";
+     _3:isPartOf <tag:new-left-review-issue-56,2009-04-23>;
+     _3:title "Göran Therborn on Heinsohn, Söhne und Weltmacht";
+     _5:abstract "Political demography of the Mid-East youth bulge as threat to Western power.";
+     _6:reviewOf <urn:isbn:9783492251242>. 
+
+ <tag:het-beroepenhuis,2009-04-25> a _6:Article;
+     _4:endingPage "43"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _4:startingPage "41"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:creator "Mil Kooyman";
+     _3:isPartOf <tag:sampol-issue-16-04,2009-04-26>;
+     _3:title "Het Beroepenhuis (Project in de kijker)";
+     _5:abstract "Er is in de voorbije regeerperiode waarschijnlijk geen toespraak geweest van minister Vandenbroucke waarin hij niet minstens een paar keer de woorden talenten en talentontwikkeling heeft laten vallen. Ondertussen is nagenoeg iedereen er van overtuigd dat de talenten van jongeren het belangrijkste criterium moet zijn voor hun studie- en beroepskeuze. Talentontwikkeling in ons onderwijs is dan ook meer dan noodzakelijk. Sinds 1999 timmert Het Beroepenhuis aan de (talenten)weg en op 4 maart 2005 gingen de deuren van het huis effectief open. Een schot in de roos.". 
+
+ <tag:met-huidig-beleid,2009-04-25> a _6:Article;
+     _4:endingPage "69"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _4:startingPage "61"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:creator "Thierry Kesteloot";
+     _3:isPartOf <tag:sampol-issue-16-04,2009-04-26>;
+     _3:title "Met huidig beleid raakt voedselcrisis niet opgelost!";
+     _5:abstract "Stijgende voedselprijzen en voedselrellen in vele steden in ontwikkelingslanden haalden de pers in 2008. Deze crisis ging niet onopgemerkt voorbij. De media-aandacht vertaalde zich in een buitengewone politieke belangstelling. Maar sindsdien werd de voedselcrisis opgevolgd door de financiële en economische crisis. De voedselprijzen duiken in elkaar, en staan veel lager dan één jaar geleden. Is het einde van de voedselcrisis dichterbij gekomen? Niet met het bestaande beleid, aangezien het mede aan de oorzaak van de crisis ligt.". 
+
+ <tag:obama-at-manassas,2009-04-23> a _6:Article;
+     _3:creator "Mike Davis";
+     _3:isPartOf <tag:new-left-review-issue-56,2009-04-23>;
+     _3:title "Obama at Manassas";
+     _5:abstract "Does Obama’s victory signal a political turning point comparable to 1980 or 1932? Mike Davis maps county-level changes, from below—minority-majority demographics, subprime suburbs, white-collar financial worries—catalysed by the 2008 campaign. From above, realignment of American capital behind the Silicon President.". 
+
+ <tag:outplacement-take,2009-04-25> a _6:Article;
+     _4:endingPage "60"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _4:startingPage "54"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:creator "Philippe Diepvents";
+     _3:isPartOf <tag:sampol-issue-16-04,2009-04-26>;
+     _3:title "Outplacement: take the money and run";
+     _5:abstract "'Herstel het vertrouwen' is de gemeenschappelijke titel voor de relanceplannen die de maatregelen bundelen die de federale en Vlaamse overheden zullen nemen om de effecten van de financiële crisis in ons land te temperen. Heel wat van deze maatregelen moeten nog geconcretiseerd en in de praktijk omgezet worden. De voorbije maanden was vooral de discussie rond het afschaffen van de doelgroepenvermindering, die vanuit het uitzonderlijk akkoord van de sociale partners werd overgenomen, brandend actueel. De plannen bevatten echter uiteraard nog veel meer maatregelen, die op initiatief van de politieke overheden werden genomen. Met dit artikel willen we de aandacht vestigen op een aantal elementen uit de relanceplannen die tot nog toe onder de radar bleven. Met name gaat het over die bijsturingen die te maken hebben met de regelgeving rond outplacement.". 
+
+ <tag:politieke-peilingen,2009-04-25> a _6:Article;
+     _8:authorString "Jaak Billiet, Nathalie Sonck";
+     _4:endingPage "53"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _4:startingPage "44"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:creator "Jaak Billiet",
+         "Nathalie Sonck";
+     _3:isPartOf <tag:sampol-issue-16-04,2009-04-26>;
+     _3:title "Politieke peilingen in de media: fictie of frictie?";
+     _5:abstract "Peilingen vertalen individuele opvattingen in een collectieve publieke opinie, maar indien dit op een gebrekkige en vertekende wijze gebeurt, ontstaat een misleidend beeld dat afwijkt van de werkelijke zorgen van de bevolking.  Door het rapporteren van deze peilingen in de media wordt fictie gecreëerd.". 
+
+ <tag:sociaaldemocraten-en-populisme,2009-04-25> a _6:Article;
+     _4:endingPage "23"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _4:startingPage "15"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:creator "Maarten Van Alstein";
+     _3:isPartOf <tag:sampol-issue-16-04,2009-04-26>;
+     _3:title "Sociaaldemocraten en populisme. Kloven en bruggen";
+     _5:abstract "Het populisme eist in de hedendaagse politiek een belangrijke rol voor zich op. In zijn opmerkelijke essay over dit fenomeen beschrijft David Van Reybrouck het succes van populistische politici en partijen in het licht van de diploma- en cultuurkloof in onze samenleving, de nieuwe maatschappelijke breuklijn. In het populisme herkent hij de stem van laaggeschoolden van wie de betrokkenheid bij de democratie en de samenleving onder druk is komen te staan. Van Reybrouck wil deze stem ernstig nemen, en daarom pleit hij niet voor minder, maar voor meer en beter populisme. Hier wordt de vraag gesteld hoe sociaaldemocraten moeten omgaan met het betoog van David Van Reybrouck.". 
+
+ <tag:sumit-sarkar-on-guha,2009-04-25> a _6:Article;
+     _3:creator "Sumit Sarkar";
+     _3:isPartOf <tag:new-left-review-issue-56,2009-04-23>;
+     _3:title "Sumit Sarkar on Guha, India after Gandhi";
+     _5:abstract "The subcontinental giant as ‘unnatural nation’ in the first history of the post-Independence era.";
+     _6:reviewOf <urn:isbn:9780230016545>. 
+
+ <tag:value-theory,2009-04-23> a _6:Article;
+     _3:creator "Robin Blackburn";
+     _3:isPartOf <tag:new-left-review-issue-56,2009-04-23>;
+     _3:title "Value Theory and the Chinese Worker";
+     _5:abstract "In answer to Mann, Blackburn explores the paradoxes of fictitious capital, underwritten by super-exploitation of China’s producers. A public-utility credit system, democratic forms of nationalization and mechanisms to socialize investment as steps towards financial dual power.". 
+
+ <tag:wie-op-de-rem-staat,2009-04-25> a _6:Article;
+     _4:endingPage "3"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _4:startingPage "1"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:creator "Jan de Zutter";
+     _3:isPartOf <tag:sampol-issue-16-04,2009-04-26>;
+     _3:title "Wie op de rem staat, geraakt niet vooruit";
+     _5:abstract "Als we de peilingen mogen geloven - en dat mogen we beslist niet - krijgt links in Vlaanderen op 7 juni een oplawaai van jewelste. Aan de halte van een nieuw Vlaams bestuur moeten sp.a en Groen! een lange rij centrumrechtse, populistische, rechtse en radicaal-rechtse partijen laten voorgaan. Zoals het er nu uitziet, zal links op de volgende bus moeten wachten. Als die nog komt. Want rechts Vlaanderen zal ongetwijfeld met genoegen gebruik maken van publieke diensten om ze daarna met evenveel plezier op een streng dieet te zetten. We zien het vandaag gebeuren met de reddingsoperaties voor de banken en de steunmaatregelen voor de economie. In tegenstelling tot de VS, waar een minderheid die hard republikeinen tenminste het fatsoen had te leven naar hun mythe van de vrije markt en dus overheidssteun publiekelijk afwezen, is er in Europa amper een liberaal te vinden die niet gretig het handje uitsteekt om te kunnen eten uit de ruif van de gemeenschap. Na de maaltijd wordt er steevast semantisch nagetafeld over het onderscheid tussen de sterke overheid en de vette overheid. Voor de steunmaatregelen was een sterke overheid noodzakelijk, na de maaltijd wordt er geschamperd over de veel te vette overheid. Zo weinig respect voor de solidariteit die gewone mensen opbrengen via de publieke dienstverlening werd zelden vertoond. Een mens zou in deze discussie op z'n minst een vorm van wederkerigheid mogen verwachten.". 
+
+ <http://rdf.freebase.com/rdf/en.new_left_review> a _6:Periodical;
+     _3:title "New Left Review";
+     _6:issn "0028-6060";
+     _6:shortTitle "nlr". 
+
+ <tag:urn:isbn:9780262072922> a _6:Book;
+     _3:creator "Boris Groys";
+     _3:publisher "MIT Press";
+     _5:bibliographicCitation "Boris Groys, Art Power, MIT Press: Cambridge 2008, $22.95, hardback, 190 pp, 978 0 262 07292 2.";
+     _5:issued "2008";
+     _6:isbn "9780262072922". 
+
+ <urn:isbn:9780230016545> a _6:Book;
+     _3:creator "Ramachandra Guha";
+     _3:publisher "Macmillan";
+     _3:title "India after Gandhi: The History of the World’s Largest Democracy";
+     _5:bibliographicCitation "Ramachandra Guha, India after Gandhi: The History of the World’s Largest Democracy, Macmillan: London 2007, £25, hardback, 900 pp, 978 0 230 01654 5.";
+     _5:issued "2007";
+     _6:isbn "9780230016545". 
+
+ <urn:isbn:9783492251242> a _6:Book;
+     _3:creator "Gunnar Heinsohn";
+     _3:publisher "Piper";
+     _3:title "Söhne und Weltmacht: Terror im Aufstieg und Fall der Nationen";
+     _5:bibliographicCitation "Gunnar Heinsohn, Söhne und Weltmacht: Terror im Aufstieg und Fall der Nationen, Piper: Munich 2008, €9.20, paperback,189 pp, 978 3 492 25124 2.";
+     _5:issued "2008";
+     _6:isbn "9783492251242". 
+
+ <urn:isbn:9789064450624> a _6:Book;
+     _3:creator "Erik De Bruyn";
+     _3:publisher "epo";
+     _3:title "Rooddruk voor een nieuw socialisme";
+     _6:isbn "9789064450624". 
+
+ <urn:issn:1372-0740> a _6:Periodical;
+     _3:publisher "Stichting Gerrit Kreveld";
+     _3:title "Samenleving en Politiek";
+     _6:issn "1372-0740";
+     _6:shortTitle "sampol". 
+
+ <tag:new-left-review-issue-56,2009-04-23> a _6:Issue;
+     _4:number "56"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:isPartOf <http://rdf.freebase.com/rdf/en.new_left_review>;
+     _3:title "New Left Review 56 March-April 2009";
+     _5:issued "2009-03-09". 
+
+ <tag:sampol-issue-16-04,2009-04-26> a _6:Issue;
+     _4:number "4"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _4:volume "16"^^<http://www.w3.org/2001/XMLSchema#integer>;
+     _3:isPartOf <urn:issn:1372-0740>;
+     _3:title "Samenleving & Poltiek jaargang 16, 2009, nr.4 (april)";
+     _5:issued "01-04-2009". 

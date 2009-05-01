@@ -17,8 +17,11 @@ class PagesController(BaseController):
     def index(self):
         # Return a rendered template
         #return render('/pages.mako')
-        # or, return a response
-        return 'Hello World'
+        # or, return a respon se
+        c.issues = Issue.ClassInstances()
+        c.title = "Serials Service"
+        c.bodySection = "new"
+        return render('base.xml')
 
     def serials(self):
         
@@ -36,21 +39,6 @@ class PagesController(BaseController):
         c.title = c.periodical.title        
         c.bodySection = "periodical"
         return render('base.xml')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     def issue(self, shortTitle, volume, number):
         s = shortTitle

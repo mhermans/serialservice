@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import unittest, sys
 
-sys.path.append('../utils')
+sys.path.append('/home/maarten/workdir/serialservice/utils')
 from mapping import Article, Issue, Periodical, Book
 
 from rdfalchemy import rdfSubject 
@@ -83,7 +83,7 @@ class TestBasicMapping(unittest.TestCase):
         self.assertEqual(0, len(self.graph))
         a = Article("<tag:test-article,2009-04-25>")
         #a = Article(URIRef("tag:test-article,2009-04-25"))
-        self.assertEqual(0, len(self.graph)) #XXX bug? waarom geen rdf:type bibo:Article (bnode initialisatie wél)
+        self.assertEqual(1, len(self.graph)) #XXX bug? waarom geen rdf:type bibo:Article (bnode initialisatie wél)
         #self.assertTrue(isinstance(list(self.graph.subjects())[0], URIRef))
 
     def testTraversal(self):
@@ -95,6 +95,22 @@ class TestBasicMapping(unittest.TestCase):
         a.issue = i
         i.periodical = p
         self.assertEqual(a.issue.periodical.title, "Periodicaltitle")
+
+    def testArticleComparison(self):
+        a1 = Article()
+        a2 = Article()
+        a1.sPg = 1
+        a2.sPg = 3
+    
+        self.assertTrue(a1 < a2)
+        self.assertTrue(a2 > a1)
+        a3 =Article()
+        a3.sPg = 5
+        a4 = Article()
+        a4.sPg = 7
+        a5 = Article()
+        a5.sPg = 9
+        self.assertEqual([a1, a2, a3, a4, a5], sorted([a5, a3, a4, a2, a1]))
 
     #def testIssueArticleList(self):
     #    a = Article()
@@ -115,7 +131,7 @@ class TestLoadDataMapping(unittest.TestCase):
 
     def testLoad(self):
         self.graph.parse("/home/maarten/workdir/serialservice/data/capitalclass97.ttl", format="n3")
-        self.assertEqual(85, len(self.graph))
+        self.assertEqual(87, len(self.graph))
 
 
 if __name__ == "__main__":
