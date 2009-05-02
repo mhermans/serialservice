@@ -23,6 +23,7 @@ nlr.shortTitle = "nlr"
 nlr56 = Issue("<tag:new-left-review-issue-56,2009-04-23>")
 nlr56.periodical = nlr
 nlr56.number = 56
+nlr56.volume = 2
 nlr56.title = "New Left Review 56 March-April 2009"
 nlr56.pubdate = "2009-03-09"
 
