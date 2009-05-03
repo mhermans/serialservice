@@ -49,7 +49,7 @@
     
     <div class="articleInfo" py:for="a in sorted(c.articles)">
         <h4 class="articleTitle" py:content="a.title" />
-        <div py:if="a.creators">By ${opsomming(a.creators)}</div>
+        <div py:if="a.makers">By ${opsomming(a.makers)}</div>
         <div py:if="a.ives">Interview with ${opsomming(a.ives)}<py:if test="a.ivrs">, by ${opsomming(a.ivrs)}</py:if>.</div>
         <div py:if="a.sPg and a.ePg">Pagina's ${a.sPg}--${a.ePg}(${a.ePg-a.sPg})</div>
         <div class="articleAbstract" py:if="a.abstract" py:content="a.abstract" />

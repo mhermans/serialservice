@@ -110,15 +110,24 @@
     }
 
  a:link { 
+    #font-weight: bold; 
+    text-decoration: none; 
+    color: #C9551C;
+    }
+
+.path a:visited { 
     font-weight: bold; 
     text-decoration: none; 
     color: #C9551C;
     }
-#path a:visited { 
-    font-weight: bold; 
-    text-decoration: none; 
-    color: #C9551C;
-    }
+
+.path a:link { 
+   font-weight: bold; 
+   text-decoration: none; 
+   color: #C9551C;
+   }
+
+
 
  a:visited { 
     font-weight: bold; 

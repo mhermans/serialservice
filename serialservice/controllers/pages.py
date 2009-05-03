@@ -6,7 +6,7 @@ from pylons import config
 
 from serialservice.lib.base import BaseController, render
 
-from serialservice.model.bibo import Periodical, Issue, Article
+from serialservice.model.bibo import Periodical, Issue, Article, Person
 
 log = logging.getLogger(__name__)
 
@@ -77,7 +77,7 @@ class PagesController(BaseController):
         c.contributors = []
 
         for a in Article.filter_by(issue=i.resUri):
-            for cr in a.creators:
+            for cr in a.makers:
                 c.contributors.append(cr)
             for ivr in a.ivrs:
                  c.contributors.append(ivr)        
@@ -93,5 +93,13 @@ class PagesController(BaseController):
     def submit(self):
         c.title = "Submit data" 
         c.bodySection = "submit"
+        c.baseUrl = "http://localhost:5000/"
+        return render("base.xml")
+
+    def person(self, uri):
+        from rdflib import URIRef
+        c.person = Person(URIRef(''.join(['http://localhost:5000/entities/', uri]))) #XXX zorg ervoor dat dit uniek is!
+        c.title = c.person.name 
+        c.bodySection = "person"
         c.baseUrl = "http://localhost:5000/"
         return render("base.xml")

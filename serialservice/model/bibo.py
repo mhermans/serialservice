@@ -8,7 +8,7 @@ from rdfalchemy.orm import mapper
 from rdflib import ConjunctiveGraph, Literal, BNode, URIRef
 from namespaces import *
 
-BASEURL = "http://localhost:5000/serials/" #XXX zet dit ergens in de config
+BASEURL = "http://localhost:5000" #XXX zet dit ergens in de config
 
 class Periodical(rdfSubject):
     rdf_type = BIBO.Periodical
@@ -23,7 +23,7 @@ class Periodical(rdfSubject):
 
     @property
     def locUrl(self):
-        return urlparse.urljoin(BASEURL, self.shortTitle )
+        return '/'.join([BASEURL, 'serials', self.shortTitle])
 
 class Issue(rdfSubject):
     rdf_type = BIBO.Issue
@@ -43,11 +43,8 @@ class Issue(rdfSubject):
 
         n = str(self.number)
 
-        return urlparse.urljoin(BASEURL, '/'.join([self.periodical.shortTitle, v, n]))
-
-
-
-
+        return '/'.join([BASEURL, 'serials', self.periodical.shortTitle, v, n])
+        
     #@property
     #def articles(self):
     #    """"Return the articles in this issue"""
@@ -62,14 +59,15 @@ class Article(rdfSubject):
     rdf_type = BIBO.Article
     title = rdfSingle(DC['title'])
     creators = rdfMultiple(DC.creator)
+    makers = rdfMultiple(FOAF.maker, range_type=FOAF.Person)
     abstract = rdfSingle(DCTERMS['abstract'])
     sPg = rdfSingle(PRISM.startingPage)
     ePg = rdfSingle(PRISM.endingPage)
     auStr = rdfSingle(OV.authorString)
     section = rdfSingle(PRISM.section)
     issue = rdfSingle(DC.isPartOf, range_type=BIBO.Issue)
-    ivrs = rdfMultiple(BIBO.interviewer)
-    ives = rdfMultiple(BIBO.interviewee)
+    ivrs = rdfMultiple(BIBO.interviewer, range_type=FOAF.Person)
+    ives = rdfMultiple(BIBO.interviewee, range_type=FOAF.Person)
     reviewOf = rdfMultiple(BIBO.reviewOf)
 
     def __lt__(self, other):
@@ -107,6 +105,28 @@ class Book(rdfSubject):
 #    rdf_type = FOAF.Organization
 #    name = rdfSingle(FOAF.name)
 #    location = rdfSingle(ADR.localityName)
+
+class Person(rdfSubject):
+    rdf_type = FOAF.Person
+    name = rdfSingle(FOAF.name)
+    member = rdfMultiple(FOAF.member, range_type=FOAF.Group)
+
+    #@property
+    #def slug(self): #XXX define on __init__ ?
+    #    return '-'.join(self.name.split()).lower()
+
+    @property
+    def locUrl(self):
+        return '/'.join([BASEURL, 'entity', '-'.join(self.name.split()).lower()])
+
+class EditorGroup(rdfSubject):
+    rdf_type = FOAF.Group
+    #name = rdfSingle(FOAF.name)
+    members = rdfMultiple(FOAF.member, range_type=FOAF.Person)
+    periodical = rdfSingle(FOAF.makes, range_type=BIBO.Periodical)
+
+
+
 
 mapper()
 

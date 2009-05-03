@@ -3,7 +3,16 @@
         xmlns:xi="http://www.w3.org/2001/XInclude">
 
 
-<py:def function="opsomming(names)" class="opsomming" py:choose=""><py:when test="len(names) == 1">${names}</py:when><py:when test="len(names) == 2">${names[0]} en ${names[1]}</py:when><py:otherwise test="">${', '.join(names[0:-1])} and ${names[-1]}</py:otherwise></py:def>
+<py:def function="opsomming(persons)" class="opsomming" py:choose="">
+    <py:when test="len(persons) == 1"><a href="${persons[0].resUri}">${persons[0].name}</a></py:when>
+    <py:when test="len(persons) == 2"><a href="${persons[0].resUri}">${persons[0].name}</a> and <a href="${persons[1].resUri}">${persons[1].name}</a></py:when>
+    <py:otherwise test="">
+        <py:for each="person in persons[0:-1]">
+            <a href="${person.resUri}">${person.name}</a>,
+        </py:for>
+        and <a href="${persons[-1].resUri}">${persons[-1].name}</a>
+    </py:otherwise>
+</py:def>
 
 <py:def function="bookReview(books)">
      <div class="bookInfo" py:for="b in books">

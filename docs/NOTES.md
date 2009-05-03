@@ -13,6 +13,9 @@ RDFAlchemy remarks
 
 "title" as a property is tricky, use dictionary notation DC['title'] (something with unicode, cf. mailinglist)
 
+    DONT: title = DC.title
+    DO: title = DC['title']
+
 When instantiating rdfSubjects by URI, do not forget the '<' & '>'. Eg:
     
     a = Article('<http://stableid.example.com/article>')
@@ -57,15 +60,28 @@ DONE ***Sorteerfunctie***. "If you need variables, functions, or classes for use
 
 ***Date localisation***. Babel gebruiken om datum van YYYY-MM-DD naar lokaal formaat te krijgen. Eerst kijken of het naar python datatime objects gemapt wordt.
 
+***Valid XHTML+RDFa*** genereren
+
+***Link naar RDF** Link header? <head>? RDFa?
+
+***Basic html submission form*** 
 
 Url pattern
 -----------
 
-http://serials.progsite.org/sampol/16/04/5
-http://serials.progsite.org/nlr/0/56/3
-http://who.progsite/imavo
-http://who.progsite/freddy-de-pauw
+    Article info: http://serials.progsite.org/serials/sampol/16/04/5
+        -> about: http://serials.progsite.org/serials/sampol/16/04/5#id
 
+    Article info: http://serials.progsite.org/nlr/0/56/3 (nu volume)
+        -> about http://serials.progsite.org/nlr/0/56/3#id
+
+    http://who.progsite/entities/imavo
+        (in controller: entity-class opvragen -> ander template laden (zelfde routing)
+
+    http://who.progsite/entities/freddy-de-pauw
+        -> about http://who.progsite/entities/freddy-de-pauw#id
+        
+De #id urls als resUri/identifier gebruiken, maakt locUrl overbodig, en geeft een httprange-14 zinnige oplossing...
 
 Principles:
 ----------
@@ -76,9 +92,9 @@ Principles:
 
 Thanks to:
 
-http://plugins.learningjquery.com/expander/index.html
-Various sites I for demonstrating css-tricks
-COLOURlovers http://www.colourlovers.com/palette/804447/know_thy_enemy
+* http://plugins.learningjquery.com/expander/index.html
+* Various sites for demonstrating css-tricks
+* COLOURlovers http://www.colourlovers.com/palette/804447/know_thy_enemy
 
 Various
 -------
@@ -87,3 +103,4 @@ Various
 * http://workaround.org/pylons/pylons-cheatsheet.html
 * http://www.rexx.com/~dkuhlman/pylons_quick_site.html
 * http://www.malsup.com/jquery/form/
+* Een wordl per issue zou wel leuk zijn...
