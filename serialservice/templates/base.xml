@@ -49,6 +49,10 @@
         font-size: 30px ;
     }
 
+    h2 {
+        border-bottom:1px dotted #CCCCCC;
+    }
+
     .articleTitle {
         margin-top : 5;
         margin-bottom : 5;
