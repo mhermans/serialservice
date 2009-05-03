@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="dataBody" xmlns:py="http://genshi.edgewall.org/">
+<p>
+<form id="myForm" action="comment.php" method="post"> 
+    Name: <input type="text" name="name" /> 
+    Comment: <textarea name="comment"></textarea> 
+    <input type="submit" value="Submit Comment" /> 
+</form>
+</p>
+</div>

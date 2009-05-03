@@ -25,3 +25,5 @@ class Globals(object):
         fn2 = "/home/maarten/workdir/serialservice/data/dump.ttl"
         self.graph.parse(fn1, format="n3")
         self.graph.parse(fn2, format="n3")
+
+        self.baseUrl = "http://localhost:5000/"

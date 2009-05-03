@@ -7,7 +7,7 @@ from mapping import Article, Issue, Periodical, Book
 
 from rdfalchemy import rdfSubject 
 from rdfalchemy.orm import mapper
-from rdflib import ConjunctiveGraph, Namespace, BNode, URIRef
+from rdflib import ConjunctiveGraph, Namespace, BNode, URIRef, Literal
 
 
 DC = Namespace('http://purl.org/dc/elements/1.1/')
@@ -61,6 +61,10 @@ class TestBasicMapping(unittest.TestCase):
         i = Issue()
         i.number = 3
         self.assertEqual(2, len(self.graph))
+        #XSD_NS = Namespace(u'http://www.w3.org/2001/XMLSchema#')
+        #i.pubdate = Literal("2001-12-15", datatype=XSD_NS.date)
+        #self.assertEqual(2, self.graph.serialize())
+        #self.assertEqual("2001-12-15", i.pubdate)
 
     def testPeriodical(self):
         p  = Periodical()

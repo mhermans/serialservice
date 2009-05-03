@@ -1,6 +1,6 @@
 import logging
 
-from pylons import request, response, session, tmpl_context as c
+from pylons import request, response, session, tmpl_context as c, app_globals as g
 from pylons.controllers.util import abort, redirect_to
 
 from serialservice.lib.base import BaseController, render
@@ -15,12 +15,10 @@ log = logging.getLogger(__name__)
 class PagesController(BaseController):
 
     def index(self):
-        # Return a rendered template
-        #return render('/pages.mako')
-        # or, return a respon se
         c.issues = Issue.ClassInstances()
         c.title = "Serials Service"
         c.bodySection = "new"
+        c.baseUrl = "http://localhost:5000/"
         return render('base.xml')
 
     def serials(self):
@@ -28,6 +26,8 @@ class PagesController(BaseController):
         c.periodicals = Periodical.ClassInstances()
         c.title = "Serials"
         c.bodySection = "serials"
+        c.baseUrl = "http://localhost:5000/"
+
         return render('base.xml')
 
     def periodical(self, shortTitle):
@@ -38,12 +38,25 @@ class PagesController(BaseController):
         
         c.title = c.periodical.title        
         c.bodySection = "periodical"
+        c.baseUrl = "http://localhost:5000/"
         return render('base.xml')
+
+    def volume(self, shortTitle, volume):
+        s = shortTitle       
+        c.volume = volume
+
+        c.periodical = Periodical.get_by(shortTitle=s)
+        c.issues = Issue.filter_by(periodical=c.periodical.resUri) #XXX filter on volume does not work!
+        c.title = ' '.join([c.periodical.title, ':', 'volume', c.volume])
+        c.bodySection = "volume"
+        c.baseUrl = "http://localhost:5000/"
+        return render("base.xml")
 
     def issue(self, shortTitle, volume, number):
         s = shortTitle
         v = volume
         n = number
+
 
         #via globals: g.graph = rdfSubject.db
         #zie serialservice/lib/app_globals.py.
@@ -56,18 +69,29 @@ class PagesController(BaseController):
         if len(i) == 1:
             i = list(i)[0]
 
-        alist = Article.filter_by(issue=i.resUri)
-        
+        c.articles = Article.filter_by(issue=i.resUri)
+
+        c.contributors = []
+
+        for a in Article.filter_by(issue=i.resUri):
+            for cr in a.creators:
+                c.contributors.append(cr)
+            for ivr in a.ivrs:
+                 c.contributors.append(ivr)        
+            for ive in a.ives:
+                 c.contributors.append(ive)        
+
         c.issue = i
-        c.articles = alist
         c.title = i.periodical.title 
         c.bodySection = "issue"
+        c.baseUrl = "http://localhost:5000/"
         return render("base.xml")
 
-
-
-
-
+    def submit(self):
+        c.title = "Submit data" 
+        c.bodySection = "submit"
+        c.baseUrl = "http://localhost:5000/"
+        return render("base.xml")
 
 
 

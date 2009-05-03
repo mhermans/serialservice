@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div    xmlns:py="http://genshi.edgewall.org/"
+        xmlns:xi="http://www.w3.org/2001/XInclude">
+
+
+<py:def function="opsomming(names)" class="opsomming" py:choose=""><py:when test="len(names) == 1">${names}</py:when><py:when test="len(names) == 2">${names[0]} en ${names[1]}</py:when><py:otherwise test="">${', '.join(names[0:-1])} and ${names[-1]}</py:otherwise></py:def>
+
+<py:def function="bookReview(books)">
+     <div class="bookInfo" py:for="b in books">
+        <span py:content="b.title" />
+        <span py:if="b.creators">Door ${opsomming(b.creators)}</span>
+    </div>
+</py:def>
+
+</div>

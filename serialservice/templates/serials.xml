@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div id="journalBody" xmlns:py="http://genshi.edgewall.org/">
 
+<div  xmlns:py="http://genshi.edgewall.org/">
+    
+  <div class="path">
+    <p><a href="${''.join([c.baseUrl, 'new'])}">HOME</a> :: <a href="${''.join([c.baseUrl, 'serials'])}">SERIALS</a></p>
+  </div>
+
+  <h2>Indexed Serials</h2>
+
+  <div id="journalBody">
     <ul class="periodicalsList" py:for="p in c.periodicals">
-        <li><a href="${p.locUrl}">${p.title}</a></li>
+      <li><a href="${p.locUrl}">${p.title}</a></li>
     </ul>
-
+  </div>
 </div>

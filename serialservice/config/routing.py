@@ -24,8 +24,11 @@ def make_map():
     map.connect('/{controller}/{action}/{id}')
 
     map.connect('mapping1', '/new', controller='pages', action='index' )
-    map.connect('mapping1', '/serials', controller='pages', action='serials' )
-    map.connect('mapping1', '/serials/:shortTitle', controller='pages', action='periodical' )
-    map.connect('mapping2', '/serials/:shortTitle/:volume/:number', controller='pages', action='issue')
+    map.connect('mapping2', '/serials', controller='pages', action='serials' )
+    map.connect('mapping3', '/serials/:shortTitle', controller='pages', action='periodical' )
+    map.connect('mapping4', '/serials/:shortTitle/:volume', controller='pages', action='volume')
+    map.connect('mapping5', '/serials/:shortTitle/:volume/:number', controller='pages', action='issue')
+
+    map.connect('mapping6', '/submit', controller='pages', action='submit' )
 
     return map

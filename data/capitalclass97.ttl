@@ -20,6 +20,7 @@
     dc:isPartOf     <http://rdf.freebase.com/ns/en.capital_class> ;
     prism:coverDate "Spring '09" ;
     dcterms:issued  "2009-01-15" ;
+    foaf:depiction  <http://www.cseweb.org.uk/graphics/covers/small97.jpg> ;
     prism:number    97 .
 
 <tag:parallel-visions,2009-04-22>

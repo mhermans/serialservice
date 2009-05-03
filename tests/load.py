@@ -3,7 +3,7 @@
 
 from rdfalchemy import rdfSubject, rdfSingle, rdfMultiple
 from rdfalchemy.orm import mapper
-from rdflib import ConjunctiveGraph, Namespace
+from rdflib import ConjunctiveGraph, Namespace, URIRef
 import sys
 sys.path.append('/home/maarten/workdir/serialservice/utils/')
 from mapping import Article, Issue, Periodical, Book
@@ -19,6 +19,7 @@ nlr = Periodical("<http://rdf.freebase.com/rdf/en.new_left_review>")
 nlr.title = "New Left Review"
 nlr.issn = "0028-6060"
 nlr.shortTitle = "nlr"
+nlr.homepage = URIRef("http://www.newleftreview.org/")
 
 nlr56 = Issue("<tag:new-left-review-issue-56,2009-04-23>")
 nlr56.periodical = nlr
@@ -26,6 +27,7 @@ nlr56.number = 56
 nlr56.volume = 2
 nlr56.title = "New Left Review 56 March-April 2009"
 nlr56.pubdate = "2009-03-09"
+nlr56.coverImg = URIRef("http://www.newleftreview.org/assets/images/NLR56cover.gif")
 
 a1 = Article("<tag:obama-at-manassas,2009-04-23>")
 a1.title = "Obama at Manassas"
@@ -119,12 +121,13 @@ sampol.title = "Samenleving en Politiek"
 sampol.issn = "1372-0740"
 sampol.publisher = "Stichting Gerrit Kreveld"
 sampol.shortTitle = "sampol"
+sampol.homepage = URIRef("http://stichtinggerritkreveld.be.res7.mijnpreview.com/ECMS_CLIENT_SGK/pages/showpage.php?id=13")
 
 
 sampol16_4 = Issue('<tag:sampol-issue-16-04,2009-04-26>')
 sampol16_4.number = 4
 sampol16_4.volume = 16
-sampol16_4.pubdate = "01-04-2009"
+sampol16_4.pubdate = "2009-04-01"
 sampol16_4.title = "Samenleving & Poltiek jaargang 16, 2009, nr.4 (april)"
 sampol16_4.periodical = sampol
 

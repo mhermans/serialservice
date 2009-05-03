@@ -1,36 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div id="issueBody" xmlns:py="http://genshi.edgewall.org/">
-    <py:def  xmlns:py="http://genshi.edgewall.org/"  function="opsomming(names)" class="opsomming" py:choose="">
-        <py:when test="len(names) == 1">${names}</py:when>
-        <py:when test="len(names) == 2">${names[0]} en ${names[1]}</py:when>
-        <py:otherwise test="">${', '.join(names[0:-1])} en ${names[-1]}</py:otherwise>
-  </py:def>
-
-<py:def function="bookReview(books)">
-     <div class="bookInfo" py:for="b in books">
-        <span py:content="b.title" />
-        <span py:if="b.creators">Door ${opsomming(b.creators)}</span>
-    </div>
-</py:def>
+<div    xmlns:py="http://genshi.edgewall.org/"
+        xmlns:xi="http://www.w3.org/2001/XInclude">
     
-    <div class="issueInfo">
-        <div py:content="c.issue.periodical.title" />
-        <py:choose test="">
-            <div py:when="c.issue.volume and c.issue.number">Volume ${c.issue.volume}, nummer ${c.issue.number}</div>
-            <div py:when="c.issue.volume and not c.issue.number">Volume ${c.issue.volume}</div>
-            <div py:when="not c.issue.volume and c.issue.number">Nummer ${c.issue.number}</div>
-        <!--!div py:if="issue.volume">volume ${issue.volume}</div><div py:if="issue.number">nummer ${issue.number}</div-->
-        </py:choose>
-        <div py:if="c.issue.pubdate">Verschenen ${c.issue.pubdate}</div>
+    <!--! Include custom template functions-->
+    <xi:include href="functions.xml"/> 
+
+    <!-- Function to (de)collaps long paragraphs XXX move to .js-file -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // simple example, using all default options
+            $('div.articleAbstract').expander({
+                slicePoint:       80,  // default is 100
+                expandText:         '[...]', // default is 'read more...'
+                collapseTimer:    10000, // re-collapses after 5 seconds; default is 0, so no re-collapsing
+                userCollapseText: '[^]'  // default is '[collapse expanded text]'
+            });
+        });
+    </script>
+
+    <!-- Top navigation path -->
+    <div class="path">
+        <p><a href="${''.join([c.baseUrl, 'new'])}">HOME</a> :: <a href="${''.join([c.baseUrl, 'serials'])}">SERIALS</a> :: <a href="${c.issue.periodical.locUrl}">${c.issue.periodical.title.upper()}</a> :: <py:if test="c.issue.volume"><a href="${''.join([c.issue.periodical.locUrl, '/', str(c.issue.volume)])}">VOL ${c.issue.volume}</a> :: </py:if> <a href="${c.issue.locUrl}">NR ${c.issue.number}</a></p>
     </div>
 
+    
+    <h2 id="issueTitle" py:content="c.issue.periodical.title" />
+    
+    <div id="issueInfo" class="infobox">
+
+        <span id="issueCover" style="float:left;">
+            <img py:if="c.issue.coverImg" src="${c.issue.coverImg.resUri}" width="150" heigth="200"/>
+        </span>
+        <span id="issueData">
+            <py:choose test="">
+                <p py:when="c.issue.volume and c.issue.number">Volume ${c.issue.volume}, nummer ${c.issue.number}</p>
+                <p py:when="c.issue.volume and not c.issue.number">Volume ${c.issue.volume}</p>
+                <p py:when="not c.issue.volume and c.issue.number">Nummer ${c.issue.number}</p>
+                <!--!div py:if="issue.volume">volume ${issue.volume}</div><div py:if="issue.number">nummer ${issue.number}</div-->
+            </py:choose>
+            <p py:if="c.issue.pubdate">Published ${c.issue.pubdate}</p>
+            <p>Contributors: ${opsomming(c.contributors)}.</p>
+        </span>
+        <div style="clear:both;" />
+
+    </div>
+
+    <h2>Table of contents:</h2>
     
     <div class="articleInfo" py:for="a in sorted(c.articles)">
-        <div class="articleTitle" py:content="a.title" />
-        <div py:if="a.creators">Door ${opsomming(a.creators)}</div>
-        <div py:if="a.ives">Interview met ${opsomming(a.ives)}<py:if test="a.ivrs"> door ${opsomming(a.ivrs)}</py:if>.</div>
+        <h4 class="articleTitle" py:content="a.title" />
+        <div py:if="a.creators">By ${opsomming(a.creators)}</div>
+        <div py:if="a.ives">Interview with ${opsomming(a.ives)}<py:if test="a.ivrs">, by ${opsomming(a.ivrs)}</py:if>.</div>
         <div py:if="a.sPg and a.ePg">Pagina's ${a.sPg}--${a.ePg}(${a.ePg-a.sPg})</div>
-        <div py:if="a.abstract" py:content="a.abstract[0:40]" />
+        <div class="articleAbstract" py:if="a.abstract" py:content="a.abstract" />
         <!--!py:if test="a.reviewOf">${bookReview(a.reviewOf)}</py:if-->
     </div>
+
 </div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div    xmlns:py="http://genshi.edgewall.org/"
+        xmlns:xi="http://www.w3.org/2001/XInclude">
+    
+    <!-- Top navigation path -->
+    <div class="path">
+        <p><a href="${''.join([c.baseUrl, 'new'])}">HOME</a> :: <a href="${''.join([c.baseUrl, 'serials'])}">SERIALS</a> :: <a href="${c.periodical.locUrl}">${c.periodical.title.upper()}</a> :: <a href="${''.join([c.periodical.locUrl, '/', c.volume])}">VOL ${c.volume}</a></p>
+    </div>
+
+    <h2>Issues in ${c.periodical.title}, volume ${c.volume}</h2>
+
+    <ul class="issuesList" py:for="i in c.issues">
+        <li><a href="${i.locUrl}">Nummer ${i.number}</a></li>
+    </ul>
+
+</div>

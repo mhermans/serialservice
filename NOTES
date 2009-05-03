@@ -55,7 +55,7 @@ DONE ***Sorteerfunctie***. "If you need variables, functions, or classes for use
 
 ***Issue title genreren***. Een template-functie schrijven die een mooie issue-title genereerd.
 
-***Date localisation***. Babel gebruiken om datum van YYYY-MM-DD naar lokaal formaat te krijgen.
+***Date localisation***. Babel gebruiken om datum van YYYY-MM-DD naar lokaal formaat te krijgen. Eerst kijken of het naar python datatime objects gemapt wordt.
 
 
 Url pattern

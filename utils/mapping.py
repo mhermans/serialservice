@@ -22,6 +22,7 @@ class Periodical(rdfSubject):
     issn = rdfSingle(BIBO.issn)
     publisher = rdfSingle(DC['publisher'])
     shortTitle = rdfSingle(BIBO['shortTitle'])
+    homepage = rdfSingle(FOAF.homepage)
     #publisher = rdfSingle(DC.publisher,range_type=FOAF.Organization)
     #label = rdfSingle(RDFS.label)
     #issues = rdfMultiple(
@@ -37,7 +38,8 @@ class Issue(rdfSubject):
     title = rdfSingle(DC['title'])
     pubdate = rdfSingle(DCTERMS.issued)
     volume = rdfSingle(PRISM.volume)
-    #articles = rdfContainer(DCTERMS.hasPart)
+    coverImg = rdfSingle(FOAF.depiction)
+
     @property
     def locUrl(self):
         if not self.volume:
@@ -61,7 +63,6 @@ class Issue(rdfSubject):
         #return len(self.db)
 
     # zie http://groups.google.com/group/rdfalchemy-dev/browse_thread/thread/ad9363b7f1b275c2/92672eef06a8ac03
-    #coveer
 
 class Article(rdfSubject):
     rdf_type = BIBO.Article
