@@ -1,14 +1,12 @@
 import logging
 
-from pylons import request, response, session, tmpl_context as c, app_globals as g
+from pylons import request, response, session, tmpl_context as c, app_globals
 from pylons.controllers.util import abort, redirect_to
+from pylons import config
 
 from serialservice.lib.base import BaseController, render
 
-import sys
-sys.path.append('/home/maarten/workdir/serialservice/utils/')
-from mapping import Periodical, Issue, Article
-
+from serialservice.model.bibo import Periodical, Issue, Article
 
 log = logging.getLogger(__name__)
 
@@ -18,7 +16,12 @@ class PagesController(BaseController):
         c.issues = Issue.ClassInstances()
         c.title = "Serials Service"
         c.bodySection = "new"
-        c.baseUrl = "http://localhost:5000/"
+        c.baseUrl = "http://localhost:5000/" #XXX c.baseUrl zouden in g.baseUrl moeten zitten, niet telken opnieuw definieren
+        #return config['pylons.paths']['templates']
+        #return config['app_conf']['cache_dir']
+        #return config['global_conf']
+        #return app_globals.baseUrl #equivalent aan:
+        #return config['pylons.app_globals'].baseUrl
         return render('base.xml')
 
     def serials(self):
@@ -92,8 +95,3 @@ class PagesController(BaseController):
         c.bodySection = "submit"
         c.baseUrl = "http://localhost:5000/"
         return render("base.xml")
-
-
-
-
-

@@ -1,15 +1,30 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
+#Deze rommel werk niet:
+# zie http://wiki.pylonshq.com/display/pylonscookbook/Getting+Data+from+the+Configuration+File
+#from paste.deploy import appconfig 
+#import os
+#iniFile = os.path.normpath(os.path.join(os.getcwd(), '../../development.ini'))
+#conf = appconfig('config:' + iniFile)
+#import sys
+#sys.path.appen('../')
+#import serialservice
+#serialservice.config.environment.load_environment(conf.global_conf, conf.local_conf)
+
+
+import sys
+sys.path.append('../') # wil de model directory importeren
+from model.bibo import Article, Issue, Periodical, Book
+from model.namespaces import *
+
 from rdfalchemy import rdfSubject, rdfSingle, rdfMultiple
 from rdfalchemy.orm import mapper
-from rdflib import ConjunctiveGraph, Namespace, URIRef
-import sys
-sys.path.append('/home/maarten/workdir/serialservice/utils/')
-from mapping import Article, Issue, Periodical, Book
+from rdflib import ConjunctiveGraph, URIRef
+
+#initialize main graph
 g = ConjunctiveGraph = rdfSubject.db
 
-BIBO = Namespace('http://purl.org/ontology/bibo/')
 
     #############
     #   NLR 56  #

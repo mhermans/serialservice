@@ -1,4 +1,5 @@
 """The application's Globals object"""
+import os
 from pylons import config
 
 from beaker.cache import CacheManager
@@ -21,8 +22,8 @@ class Globals(object):
         self.cache = CacheManager(**parse_cache_config_options(config))
 
         self.graph = rdfSubject.db = ConjunctiveGraph()
-        fn1 = "/home/maarten/workdir/serialservice/data/capitalclass97.ttl"
-        fn2 = "/home/maarten/workdir/serialservice/data/dump.ttl"
+        fn1 = os.path.join(config['pylons.paths']['data'], 'capitalclass97.ttl')
+        fn2 = os.path.join(config['pylons.paths']['data'], 'dump.ttl')
         self.graph.parse(fn1, format="n3")
         self.graph.parse(fn2, format="n3")
 

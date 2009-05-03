@@ -1,12 +1,14 @@
 from rdflib import ConjunctiveGraph
 g = ConjunctiveGraph()
-g.parse('hm_17_1.rss')
+g.parse('../data/hm_17_1.rss')
 #len(g)
-from rdflib import RDF
-from rdflib import Namespace
-RSS = Namespace("http://purl.org/rss/1.0/")
-BIBO = Namespace("http://purl.org/ontology/bibo/")
-PRISM1 = Namespace("http://prismstandard.org/namespaces/1.2/basic/")
+import sys
+sys.path.append('../')
+from model.namespaces import *
+from model.bibo import Article
+
+from rdfalchemy import rdfSubject
+
 nsm = g._get_namespace_manager()
 nsm.bind('prism', 'http:prism.com') 
 print g.serialize()
@@ -16,13 +18,8 @@ for s, p, o in g.triples((None, RDF.type, RSS.item)):
     g.remove((s, p, o))
 
 
-from rdfalchemy import rdfSubject
 
 rdfSubject.db = g
-
-import sys
-sys.path.append('/home/maarten/workdir/serialservice/utils/')
-from mapping import Article
 
 l = list(Article.ClassInstances())
 a = l[1]

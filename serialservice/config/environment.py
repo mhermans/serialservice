@@ -23,6 +23,8 @@ def load_environment(global_conf, app_conf):
     config.init_app(global_conf, app_conf, package='serialservice', paths=paths)
 
     config['routes.map'] = make_map()
+
+    config['pylons.paths']['data'] = os.path.join(root, 'data') # eerst deze, de volgende lijn initialiseerd app_globals, waar het data-paths in gebruikt wordt.
     config['pylons.app_globals'] = app_globals.Globals()
     config['pylons.h'] = serialservice.lib.helpers
 

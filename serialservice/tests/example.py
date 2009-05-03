@@ -5,8 +5,8 @@ from rdfalchemy.orm import mapper
 from rdflib import ConjunctiveGraph
 
 import sys
-sys.path.append('../utils')                          
-from mapping import Article, Issue, Periodical
+sys.path.append('../')                          
+from model.bibo import Article, Issue, Periodical
 
 graph = rdfSubject.db = ConjunctiveGraph()
 graph.parse('../data/capitalclass97.ttl', format="n3")

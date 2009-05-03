@@ -1,20 +1,14 @@
 #! /usr/bin/env python
 
+
+import urlparse
+
 from rdfalchemy import rdfSubject, rdfSingle, rdfMultiple, rdfContainer
 from rdfalchemy.orm import mapper
-from rdflib import ConjunctiveGraph, Namespace, Literal, BNode, URIRef
+from rdflib import ConjunctiveGraph, Literal, BNode, URIRef
+from namespaces import *
 
-BIBO = Namespace('http://purl.org/ontology/bibo/')
-DC = Namespace('http://purl.org/dc/elements/1.1/')
-DCTERMS = Namespace('http://purl.org/dc/terms/')
-OV = Namespace('http://open.vocab.org/terms/')
-PRISM = Namespace('http://prismstandard.org/namespaces/basic/2.0/')
-RDF = Namespace('http://www.w3.org/1999/02/22-rdf-syntax-ns#')
-RDFS =  Namespace('http://www.w3.org/2000/01/rdf-schema#')
-FOAF = Namespace('http://xmlns.com/foaf/0.1/')
-
-BASEURL = "http://localhost:5000/serials/"
-import urlparse
+BASEURL = "http://localhost:5000/serials/" #XXX zet dit ergens in de config
 
 class Periodical(rdfSubject):
     rdf_type = BIBO.Periodical
@@ -108,7 +102,7 @@ class Book(rdfSubject):
     isbn = rdfSingle(BIBO.isbn) #XXX maak IFP
     citation = rdfSingle(DCTERMS.bibliographicCitation)
 
-#ADR = Namespace('http://schemas.talis.com/2005/address/schema#')
+#
 #class Publisher
 #    rdf_type = FOAF.Organization
 #    name = rdfSingle(FOAF.name)
@@ -120,7 +114,7 @@ mapper()
 
 def testOutput():
     graph = rdfSubject.db = ConjunctiveGraph()
-    graph.parse('/home/maarten/workdir/serialservice/data/capitalclass97.ttl', format="n3")
+    graph.parse('../data/capitalclass97.ttl', format="n3")
     #graph.parse('/home/maarten/workdir/serialservice/data/nlr57.rdf')
     #print(len(graph))
     #for s, p, o in graph.triples((None, None, None)):
@@ -149,40 +143,6 @@ def testOutput():
     #j = Periodical.get_by(issn="0309-8168")
     #print j.title
 
-def testTemplate():
-
-
-    graph = rdfSubject.db = ConjunctiveGraph()
-    fn1 = "/home/maarten/workdir/serialservice/data/capitalclass97.ttl"
-    fn2 = "/home/maarten/workdir/serialservice/data/dump.ttl"
-    graph.parse(fn1, format="n3")
-    graph.parse(fn2, format="n3")
-    #p = Periodical.get_by(issn="1372-0740")
-    p = Periodical.get_by(shortTitle="capclass")
-    v = None
-    n = 97
-    i = Issue.filter_by(periodical=p.resUri)
-    i = list(i)
-    if len(i) == 1:
-        i = list(i)[0]
-    alist = Article.filter_by(issue=i.resUri)
-    from genshi.template import MarkupTemplate
-    from genshi.output import encode
-    f = open('/home/maarten/workdir/serialservice/templates/issue.xhtml')
-    t = f.read()
-    f.close()
-    tmpl = MarkupTemplate(t)
-    #filter_by(issue=i) werkt niet i.resUri wel. Filtering via chained descriptors zou leuk zijn: filter_by(issue.number=56, issue.periodical=p)
-    #print list(alist)
-    stream = tmpl.generate(issue=i, articles=alist)
-    #stream = encode(stream)
-    html = stream.render('xhtml')
-    o = file("out.html", 'w')
-    o.write(html)
-    o.close()
-
 
 if __name__ == "__main__":
     testOutput()
-    testTemplate()
-    #pass

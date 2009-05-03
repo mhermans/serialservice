@@ -2,15 +2,13 @@
 # -*- coding: utf-8 -*-
 import unittest, sys
 
-sys.path.append('/home/maarten/workdir/serialservice/utils')
-from mapping import Article, Issue, Periodical, Book
+sys.path.append('../') # wil de model directory importeren
+from model.bibo import Article, Issue, Periodical, Book
+from model.namespaces import *
 
 from rdfalchemy import rdfSubject 
 from rdfalchemy.orm import mapper
-from rdflib import ConjunctiveGraph, Namespace, BNode, URIRef, Literal
-
-
-DC = Namespace('http://purl.org/dc/elements/1.1/')
+from rdflib import ConjunctiveGraph, BNode, URIRef, Literal
 
 class TestBasicMapping(unittest.TestCase):
 
@@ -134,8 +132,8 @@ class TestLoadDataMapping(unittest.TestCase):
         self.assertEqual(0, len(self.graph))
 
     def testLoad(self):
-        self.graph.parse("/home/maarten/workdir/serialservice/data/capitalclass97.ttl", format="n3")
-        self.assertEqual(87, len(self.graph))
+        self.graph.parse("../data/capitalclass97.ttl", format="n3")
+        self.assertEqual(88, len(self.graph))
 
 
 if __name__ == "__main__":
