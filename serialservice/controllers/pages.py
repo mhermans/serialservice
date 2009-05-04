@@ -98,8 +98,9 @@ class PagesController(BaseController):
 
     def person(self, uri):
         from rdflib import URIRef
-        c.person = Person(URIRef(''.join(['http://localhost:5000/entities/', uri]))) #XXX zorg ervoor dat dit uniek is!
+        c.person = Person(URIRef(''.join(['http://localhost:5000/entities/', uri, '#id']))) #XXX zorg ervoor dat dit uniek is!
         c.title = c.person.name 
         c.bodySection = "person"
+        #raise "hi"
         c.baseUrl = "http://localhost:5000/"
         return render("base.xml")
