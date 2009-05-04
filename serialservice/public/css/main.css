@@ -1,0 +1,125 @@
+.articleInfo {
+    background-color: #FFF8BA;
+    padding-left: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.1em;
+    margin: 0.5em;
+    border-left: thick solid #941309
+
+}
+
+.infobox {
+    padding-left : 10px;
+}
+
+#issueCover {
+    padding-right : 10px;
+}
+
+h1
+{
+    background-color: #941309;
+    color: #FFF ;
+    margin:0;
+    min-height:0;
+    padding: 10px;
+
+    font-family: palatino ;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 30px ;
+}
+
+h2 {
+    border-bottom:1px dotted #CCCCCC;
+}
+
+.articleTitle {
+    margin-top : 5px;
+    margin-bottom : 5px;
+}
+
+body
+{
+    background-color: #F7C974;
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+#contents   
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 10px;
+    background-color: #FFF;
+    color: #000;
+}
+
+#bd
+{
+    padding-left : 20px ;
+    padding-right : 20px ;
+    padding-bottom : 20px ;
+}
+
+#ft
+{
+    padding-left : 20px ;
+    padding-right : 20px ;
+}
+
+#contents, #top, #bottom, #footer {
+    margin:0 auto;
+    width:950px;
+}
+
+#top, #bottom {
+    display:block !important;
+    height:10px !important;
+    width:950px;
+}
+
+#top {
+    margin-top:10px;
+}
+
+.path {
+    font-size: x-small ;
+}
+
+a:link { 
+    text-decoration: none; 
+    color: #C9551C;
+    }
+
+div.path > a:visited { 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: #C9551C;
+    }
+
+div.path a:link {
+   font-weight: bold; 
+   text-decoration: none; 
+   color: #C9551C;
+   }
+
+a:visited { 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: #941309;
+    }
+
+a:hover, a:active { 
+    text-decoration: underline; 
+    color: #F7C974;
+    }
+
+    #ft-info {
+        text-align: right;
+    }
+

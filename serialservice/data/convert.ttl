@@ -9,508 +9,508 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="tag:erik-meynen,2009-04-25">
-    <_5:title>Erik Meynen (Portfolio)</_5:title>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</_6:startingPage>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</_6:endingPage>
+  <rdf:Description rdf:about="tag:de-efficiente-overheid,2009-04-25">
+    <_7:authorString>Maarten Luts, Annie Hondeghem</_7:authorString>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</_6:endingPage>
+    <_4:abstract>Doordat werkgeversorganisaties, gekleurde denktanks en ook de media het efficiëntiedebat in belangrijke mate hebben weten te monopoliseren, is het debat omtrent de efficiënte overheid in een taboesfeer terechtgekomen. Willen we onze overheid werkelijk klaarstomen voor 2020, dan moeten de oogkleppen afgenomen worden en moet er dringend een gefundeerd debat plaatsvinden over de efficiënte overheid. De statistieken omtrent de overheidsomvang onderstrepen overigens de noodzaak om de personeelsaantallen van dit debat deel te laten uitmaken.</_4:abstract>
     <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_5:title>De efficiënte overheid geanalyseerd</_5:title>
+    <_5:creator>Maarten Luts</_5:creator>
+    <_5:creator>Annie Hondeghem</_5:creator>
+    <_9:maker rdf:resource="http://localhost:5000/entities/maarten-luts#id"/>
+    <_9:maker rdf:resource="http://localhost:5000/entities/annie-hondeghem#id"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/nathalie-sonck#id">
-    <_9:name>Nathalie Sonck</_9:name>
+  <rdf:Description rdf:about="http://localhost:5000/entities/dylan-riley#id">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Dylan Riley</_9:name>
   </rdf:Description>
-  <rdf:Description rdf:about="tag:new-left-review-issue-56,2009-04-23">
-    <_9:depiction rdf:resource="http://www.newleftreview.org/assets/images/NLR56cover.gif"/>
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
-    <_4:issued>2009-03-09</_4:issued>
-    <_5:title>New Left Review 56 March-April 2009</_5:title>
-    <_6:number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</_6:number>
-    <_5:isPartOf rdf:resource="http://rdf.freebase.com/rdf/en.new_left_review"/>
-    <_6:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</_6:volume>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/paul-a.-taylor#id">
-    <_9:name>Paul A. Taylor</_9:name>
+  <rdf:Description rdf:about="http://localhost:5000/entities/goran-therborn#id">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:colletti-on,2009-04-23">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_5:creator>Geoff Mann</_5:creator>
-    <_5:title>Colletti on the Credit Crunch</_5:title>
-    <_4:abstract>What political opportunities arise from the current financial crisis? In a critical response to Robin Blackburn’s essay in NLR 50, Geoff Mann proposes the insights of Marx’s theory of value as a starting point for thinking beyond capitalist social relations—as Blackburn’s measures, he argues, do not.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/geoff-mann#id"/>
-    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/johan-soderberg#id">
-    <_9:name>Johan Söderberg</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/luc-vanneste#id">
-    <_9:name>Luc Vanneste</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Göran Therborn</_9:name>
   </rdf:Description>
   <rdf:Description rdf:about="http://rdf.freebase.com/ns/en.capital_class">
     <_5:title>Capital &amp; Class</_5:title>
-    <_3:shortTitle>capclass</_3:shortTitle>
-    <_5:publisher>Conference of Socialist Economists</_5:publisher>
     <_3:issn>0309-8168</_3:issn>
     <rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:value-theory,2009-04-23">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_5:creator>Robin Blackburn</_5:creator>
-    <_5:title>Value Theory and the Chinese Worker</_5:title>
-    <_4:abstract>In answer to Mann, Blackburn explores the paradoxes of fictitious capital, underwritten by super-exploitation of China’s producers. A public-utility credit system, democratic forms of nationalization and mechanisms to socialize investment as steps towards financial dual power.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/robin-blackburn#id"/>
-    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/mike-davis#id">
-    <_9:name>Mike Davis</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:urn:isbn:9780262072922">
-    <_3:isbn>9780262072922</_3:isbn>
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
-    <_4:bibliographicCitation>Boris Groys, Art Power, MIT Press: Cambridge 2008, $22.95, hardback, 190 pp, 978 0 262 07292 2.</_4:bibliographicCitation>
-    <_5:creator>Boris Groys</_5:creator>
-    <_5:publisher>MIT Press</_5:publisher>
-    <_4:issued>2008</_4:issued>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/geoff-mann#id">
-    <_9:name>Geoff Mann</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="urn:isbn:9783492251242">
-    <_3:isbn>9783492251242</_3:isbn>
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
-    <_4:bibliographicCitation>Gunnar Heinsohn, Söhne und Weltmacht: Terror im Aufstieg und Fall der Nationen, Piper: Munich 2008, €9.20, paperback,189 pp, 978 3 492 25124 2.</_4:bibliographicCitation>
-    <_5:creator>Gunnar Heinsohn</_5:creator>
-    <_5:publisher>Piper</_5:publisher>
-    <_5:title>Söhne und Weltmacht: Terror im Aufstieg und Fall der Nationen</_5:title>
-    <_4:issued>2008</_4:issued>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/sumit-sarkar#id">
-    <_9:name>Sumit Sarkar</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/george-dafermos#id">
-    <_9:name>George Dafermos</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/tere-vaden#id">
-    <_9:name>Tere Vadén</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/barry-schwabsky#id">
-    <_9:name>Barry Schwabsky</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:cyberconflic-at-the-edge,2009-04-22">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">143</_6:startingPage>
-    <_5:creator>Athina Karatzogianni</_5:creator>
-    <_5:creator>George Michaelides</_5:creator>
-    <_7:authorString>Athina Karatzogianni and George Michaelides</_7:authorString>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">158</_6:endingPage>
-    <_5:title>Cyberconflict at the edge of chaos: Cryptohierarchies and self-organisation in the open-source movement</_5:title>
-    <_4:abstract>This paper differentiates between different levels of conflict in the opensource movement and discusses the role conflict and self-organisation play in the emergence of structures of leadership emergence and the bifurcation into core and peripheral groups and soft control by cryptohierarchies; in the different levels of group polarisation and conflict between communities negotiating their identity, strategy, coordination and complexity; and lastly, in the dynamic relationships between hierarchies and networks. These dynamics are forcing open-source communities to exist at the edge of chaos, and to constantly engage in lines of flight and resistance from the system of global control, while ignoring current capitalist practices and ‘growing their own’ models of self-organising knowledge creation and exchange.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/george-michaelides#id"/>
-    <_9:maker rdf:resource="http://localhost:5000/entities/athina-karatzogianni#id"/>
-    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/steffen-bohm#id">
-    <_9:name>Steffen Böhm</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:capital-and-class-issue-97,2009-04-22">
-    <_9:depiction rdf:resource="http://www.cseweb.org.uk/graphics/covers/small97.jpg"/>
-    <_6:coverDate>Spring '09</_6:coverDate>
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
-    <_6:number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">97</_6:number>
-    <_5:title>Capital &amp; Class, Spring 2009 issue</_5:title>
-    <_4:issued>2009-01-15</_4:issued>
-    <_5:isPartOf rdf:resource="http://rdf.freebase.com/ns/en.capital_class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/frank-van-massenhoven#id">
-    <_9:name>Frank Van Massenhoven</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:frank-van-massenhoven,2009-04-25">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</_6:startingPage>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</_6:endingPage>
-    <_5:title>Frank Van Massenhoven: 'Word weer de regisseur van je eigen leven'</_5:title>
-    <_4:abstract>Twee jaar geleden werd hij Overheidsmanager van het Jaar en vandaag leidt hij een federale overheidsdienst met tevreden ambtenaren die hun werkuren zelf regelen, thuis kunnen werken en trots zijn op hun radicaal vernieuwde dienst. Heeft Frank Van Massenhove ontdekt hoe je overheidsdiensten de 21ste eeuw kunt inloodsen?</_4:abstract>
-    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
-    <_3:interviewer rdf:resource="http://localhost:5000/entities/jan-de-zutter#id"/>
-    <_3:interviewee rdf:resource="http://localhost:5000/entities/frank-van-massenhoven#id"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:politieke-peilingen,2009-04-25">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</_6:startingPage>
-    <_5:creator>Jaak Billiet</_5:creator>
-    <_5:creator>Nathalie Sonck</_5:creator>
-    <_7:authorString>Jaak Billiet, Nathalie Sonck</_7:authorString>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</_6:endingPage>
-    <_5:title>Politieke peilingen in de media: fictie of frictie?</_5:title>
-    <_4:abstract>Peilingen vertalen individuele opvattingen in een collectieve publieke opinie, maar indien dit op een gebrekkige en vertekende wijze gebeurt, ontstaat een misleidend beeld dat afwijkt van de werkelijke zorgen van de bevolking.  Door het rapporteren van deze peilingen in de media wordt fictie gecreëerd.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/jaak-billiet#id"/>
-    <_9:maker rdf:resource="http://localhost:5000/entities/nathalie-sonck#id"/>
-    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/philippe-diepvents#id">
-    <_9:name>Philippe Diepvents</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:feminism-capitalism,2009-04-22">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_5:creator>Nancy Fraser</_5:creator>
-    <_5:title>Feminism, Capitalism and the Cunning of History</_5:title>
-    <_4:abstract>Do feminism and neoliberalism share a secret affinity? Nancy Fraser on the co-option of gender politics by the ‘new spirit’ of post-Fordist capitalism, and subordination of its radical critique to a World Bank agenda. Might a neo-Keynesian shift offer prospects for socialist-feminist renewal?</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/nancy-fraser#id"/>
-    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:exploitation-of-the-self,2009-04-22">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</_6:startingPage>
-    <_5:creator>Paul A. Taylor</_5:creator>
-    <_5:creator>Phoebe Moore</_5:creator>
-    <_7:authorString>Phoebe Moore and Paul A. Taylor</_7:authorString>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</_6:endingPage>
-    <_5:title>Exploitation of the self in community-based software production: Workers’ freedoms or firm foundations?</_5:title>
-    <_4:abstract>Free and open-source software (FOSS) communities constitute an arena in which thousands of users voluntarily explore design codes, spot bugs in codes, and make contributions to the code in a fashion at odds with the otherwise hugely competitive software market. This computerisation movement emerged as a challenge to the domination of such behemoth firms as Microsoft and IBM, and is portrayed as having a revolutionary ultimate goal: ‘to provide free software to do all of the jobs computer users want to do’ (Free Software Foundation, 2008). We ask to what extent FOSS actually challenges the orthodoxy: does ego-less programming of the information bazaar really free participants from the stuffy pews of the cathedral, and challenge the essence of capitalism? Knowledge emerges only through invention and re-invention, through the restless, impatient, continuing, hopeful inquiry men pursue in the world, with the world and with each other.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/phoebe-moore#id"/>
-    <_9:maker rdf:resource="http://localhost:5000/entities/paul-a.-taylor#id"/>
-    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:met-huidig-beleid,2009-04-25">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</_6:startingPage>
-    <_5:creator>Thierry Kesteloot</_5:creator>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</_6:endingPage>
-    <_5:title>Met huidig beleid raakt voedselcrisis niet opgelost!</_5:title>
-    <_4:abstract>Stijgende voedselprijzen en voedselrellen in vele steden in ontwikkelingslanden haalden de pers in 2008. Deze crisis ging niet onopgemerkt voorbij. De media-aandacht vertaalde zich in een buitengewone politieke belangstelling. Maar sindsdien werd de voedselcrisis opgevolgd door de financiële en economische crisis. De voedselprijzen duiken in elkaar, en staan veel lager dan één jaar geleden. Is het einde van de voedselcrisis dichterbij gekomen? Niet met het bestaande beleid, aangezien het mede aan de oorzaak van de crisis ligt.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/thierry-kesteloot#id"/>
-    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/giovani-arrighi#id">
-    <_9:name>Giovani Arrighi</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:freedoms-triumph,2009-04-23">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_5:creator>Dylan Riley</_5:creator>
-    <_5:title>Freedom's Triumph?</_5:title>
-    <_4:abstract>Reviving its classical definition, ‘rule of the propertyless’, Luciano Canfora recasts the story of democracy in Europe as one of successive defeats, with lessons from Louis Napoleon on the use of suffrage as legitimation for oligarchic rule. Dylan Riley assesses a remarkable historical polemic from the Italian philologist.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/dylan-riley#id"/>
-    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:sampol-issue-16-04,2009-04-26">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
-    <_4:issued>2009-04-01</_4:issued>
-    <_5:title>Samenleving &amp; Poltiek jaargang 16, 2009, nr.4 (april)</_5:title>
-    <_6:number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</_6:number>
-    <_5:isPartOf rdf:resource="urn:issn:1372-0740"/>
-    <_6:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</_6:volume>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/adam-arvidsson#id">
-    <_9:name>Adam Arvidsson</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:the-ethical-economy,2009-04-22">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</_6:startingPage>
-    <_5:creator>Adam Arvidsson</_5:creator>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</_6:endingPage>
-    <_5:title>The ethical economy: Towards a post-capitalist theory of value</_5:title>
-    <_4:abstract>Social production has risen on the agenda of the social sciences. Yet most observers have been reluctant to confront the question of the value of these practices. Instead they have mostly been characterised as ‘free’, ‘common’ or beyond value. This article argues that far from being free, social production abides to a particular value logic, an ‘ethical economy’ where value is related not to the input of labour time, but to the ability to give productive organisation to a diffuse connectivity or, which is the same thing, to transform weak ties into affectively significant strong ones. The article concludes that progressive politics should work with this new emerging value logic.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/adam-arvidsson#id"/>
-    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:obama-at-manassas,2009-04-23">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_5:creator>Mike Davis</_5:creator>
-    <_5:title>Obama at Manassas</_5:title>
-    <_4:abstract>Does Obama’s victory signal a political turning point comparable to 1980 or 1932? Mike Davis maps county-level changes, from below—minority-majority demographics, subprime suburbs, white-collar financial worries—catalysed by the 2008 campaign. From above, realignment of American capital behind the Silicon President.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/mike-davis#id"/>
-    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:het-beroepenhuis,2009-04-25">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</_6:startingPage>
-    <_5:creator>Mil Kooyman</_5:creator>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</_6:endingPage>
-    <_5:title>Het Beroepenhuis (Project in de kijker)</_5:title>
-    <_4:abstract>Er is in de voorbije regeerperiode waarschijnlijk geen toespraak geweest van minister Vandenbroucke waarin hij niet minstens een paar keer de woorden talenten en talentontwikkeling heeft laten vallen. Ondertussen is nagenoeg iedereen er van overtuigd dat de talenten van jongeren het belangrijkste criterium moet zijn voor hun studie- en beroepskeuze. Talentontwikkeling in ons onderwijs is dan ook meer dan noodzakelijk. Sinds 1999 timmert Het Beroepenhuis aan de (talenten)weg en op 4 maart 2005 gingen de deuren van het huis effectief open. Een schot in de roos.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/mil-kooyman#id"/>
-    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rdf.freebase.com/rdf/en.new_left_review">
-    <_3:shortTitle>nlr</_3:shortTitle>
-    <_9:homepage rdf:resource="http://www.newleftreview.org/"/>
-    <_5:title>New Left Review</_5:title>
-    <_3:issn>0028-6060</_3:issn>
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/juha-suoranta#id">
-    <_9:name>Juha Suoranta</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/cosma-orsi#id">
-    <_9:name>Cosma Orsi</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:giovanni-arrighi,2009-04-22">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_3:interviewer rdf:resource="http://localhost:5000/entities/david-harvey#id"/>
-    <_5:title>Giovanni Arrighi: The Winding Paths of Capital</_5:title>
-    <_4:abstract>The author of Long Twentieth Century and Adam Smith in Beijing, interviewed by David Harvey, on dispossession and development, capitalist crises, China’s future. The political education of a teenage factory-manager, via African liberation struggles and autonomia operaia; and influences—Braudel, Gramsci, Smith, Marx—in Arrighi’s work.</_4:abstract>
-    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
-    <_3:interviewee rdf:resource="http://localhost:5000/entities/giovani-arrighi#id"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:de-efficiente-overheid,2009-04-25">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</_6:startingPage>
-    <_5:creator>Annie Hondeghem</_5:creator>
-    <_5:creator>Maarten Luts</_5:creator>
-    <_7:authorString>Maarten Luts, Annie Hondeghem</_7:authorString>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</_6:endingPage>
-    <_5:title>De efficiënte overheid geanalyseerd</_5:title>
-    <_4:abstract>Doordat werkgeversorganisaties, gekleurde denktanks en ook de media het efficiëntiedebat in belangrijke mate hebben weten te monopoliseren, is het debat omtrent de efficiënte overheid in een taboesfeer terechtgekomen. Willen we onze overheid werkelijk klaarstomen voor 2020, dan moeten de oogkleppen afgenomen worden en moet er dringend een gefundeerd debat plaatsvinden over de efficiënte overheid. De statistieken omtrent de overheidsomvang onderstrepen overigens de noodzaak om de personeelsaantallen van dit debat deel te laten uitmaken.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/maarten-luts#id"/>
-    <_9:maker rdf:resource="http://localhost:5000/entities/annie-hondeghem#id"/>
-    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/george-michaelides#id">
-    <_9:name>George Michaelides</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:outplacement-take,2009-04-25">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</_6:startingPage>
-    <_5:creator>Philippe Diepvents</_5:creator>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</_6:endingPage>
-    <_5:title>Outplacement: take the money and run</_5:title>
-    <_4:abstract>'Herstel het vertrouwen' is de gemeenschappelijke titel voor de relanceplannen die de maatregelen bundelen die de federale en Vlaamse overheden zullen nemen om de effecten van de financiële crisis in ons land te temperen. Heel wat van deze maatregelen moeten nog geconcretiseerd en in de praktijk omgezet worden. De voorbije maanden was vooral de discussie rond het afschaffen van de doelgroepenvermindering, die vanuit het uitzonderlijk akkoord van de sociale partners werd overgenomen, brandend actueel. De plannen bevatten echter uiteraard nog veel meer maatregelen, die op initiatief van de politieke overheden werden genomen. Met dit artikel willen we de aandacht vestigen op een aantal elementen uit de relanceplannen die tot nog toe onder de radar bleven. Met name gaat het over die bijsturingen die te maken hebben met de regelgeving rond outplacement.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/philippe-diepvents#id"/>
-    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/thierry-kesteloot#id">
-    <_9:name>Thierry Kesteloot</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:the-hacker-movement,2009-04-22">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</_6:startingPage>
-    <_5:creator>Johan Söderberg</_5:creator>
-    <_5:creator>George Dafermos</_5:creator>
-    <_7:authorString>George Dafermos and Johan Söderberg</_7:authorString>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</_6:endingPage>
-    <_5:title>The hacker movement as a continuation of labour struggle</_5:title>
-    <_4:abstract>Examining the way in which capital exploits the volunteer labour of free software developers, this article argues that there is a historical continuity between hackers and labour struggle. The common denominator is their rejection of alienated work practices, which suggests that corporate involvement in the computer underground, far from inhibiting further struggles by hackers, may function as a catalyst for them.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/johan-soderberg#id"/>
-    <_9:maker rdf:resource="http://localhost:5000/entities/george-dafermos#id"/>
-    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:barry-schwabsky-on-groys,2009-04-25">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_5:creator>Barry Schwabsky</_5:creator>
-    <_3:reviewOf rdf:resource="tag:urn:isbn:9780262072922"/>
-    <_5:title>Barry Schwabsky on Groys, Art Power</_5:title>
-    <_4:abstract>Essays on aesthetics and politics, founded on the disconcerting insights of late-Soviet conceptualism.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/barry-schwabsky#id"/>
-    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:no-measure-for-culture,2009-04-22">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</_6:startingPage>
-    <_5:creator>Chris Land</_5:creator>
-    <_5:creator>Steffen Böhm</_5:creator>
-    <_7:authorString>Steffen Böhm and Chris Land</_7:authorString>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</_6:endingPage>
-    <_5:title>No measure for culture? Value in the new economy</_5:title>
-    <_4:abstract>This paper explores articulations of the value of investment in culture and the arts through a critical discourse analysis of policy documents, reports and academic commentary since 1997. It argues that in this period, discourses around the value of culture have moved from a focus on the direct economic contributions of the culture industries to their indirect economic benefits. These indirect benefits are discussed here under three main headings: creativity and innovation, employability, and social inclusion. These are in turn analysed in terms of three forms of capital: human, social and cultural. The paper concludes with an analysis of this discursive shift through the lens of autonomist Marxist concerns with the labour of social reproduction. It is our argument that, in contemporary policy discourses on culture and the arts, the government in the UK is increasingly concerned with the use of culture to form the social in the image of capital. As such, we must turn our attention beyond the walls of the factory in order to understand the contemporary capitalist production of value and resistance to it.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/steffen-bohm#id"/>
-    <_9:maker rdf:resource="http://localhost:5000/entities/chris-land#id"/>
-    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/dylan-riley#id">
-    <_9:name>Dylan Riley</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="urn:issn:1372-0740">
-    <_9:homepage rdf:resource="http://stichtinggerritkreveld.be.res7.mijnpreview.com/ECMS_CLIENT_SGK/pages/showpage.php?id=13"/>
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
-    <_5:publisher>Stichting Gerrit Kreveld</_5:publisher>
-    <_5:title>Samenleving en Politiek</_5:title>
-    <_3:shortTitle>sampol</_3:shortTitle>
-    <_3:issn>1372-0740</_3:issn>
+    <_3:shortTitle>capclass</_3:shortTitle>
+    <_5:publisher>Conference of Socialist Economists</_5:publisher>
   </rdf:Description>
   <rdf:Description rdf:about="http://localhost:5000/entities/michel-bauwens#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <_9:name>Michel Bauwens</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/maarten-luts#id">
-    <_9:name>Maarten Luts</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:goran-therborn-on-heinsohn,2009-04-25">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_5:creator>Göran Therborn</_5:creator>
-    <_3:reviewOf rdf:resource="urn:isbn:9783492251242"/>
-    <_5:title>Göran Therborn on Heinsohn, Söhne und Weltmacht</_5:title>
-    <_4:abstract>Political demography of the Mid-East youth bulge as threat to Western power.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/goran-therborn#id"/>
-    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:boekbespreking-rooddruk-voor,2009-04-25">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</_6:startingPage>
-    <_5:creator>Luc Vanneste</_5:creator>
-    <_3:reviewOf rdf:resource="urn:isbn:9789064450624"/>
-    <_5:title>Boekbestpreking 'Rooddruk voor een nieuw socialisme'</_5:title>
-    <_4:abstract>Boekbespreking: Erik de Bruyn, Berchem, epo, 2009</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/luc-vanneste#id"/>
-    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://localhost:5000/entities/jaak-billiet#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <_9:name>Jaak Billiet</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/phoebe-moore#id">
-    <_9:name>Phoebe Moore</_9:name>
+  <rdf:Description rdf:about="http://localhost:5000/entities/george-michaelides#id">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>George Michaelides</_9:name>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/jan-de-zutter#id">
-    <_9:name>Jan de Zutter</_9:name>
+  <rdf:Description rdf:about="tag:capital-and-class-issue-97,2009-04-22">
+    <_6:coverDate>Spring '09</_6:coverDate>
+    <_4:issued>2009-01-15</_4:issued>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+    <_5:isPartOf rdf:resource="http://rdf.freebase.com/ns/en.capital_class"/>
+    <_5:title>Capital &amp; Class, Spring 2009 issue</_5:title>
+    <_6:number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">97</_6:number>
+    <_9:depiction rdf:resource="http://www.cseweb.org.uk/graphics/covers/small97.jpg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/thierry-kesteloot#id">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Thierry Kesteloot</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:boekbespreking-rooddruk-voor,2009-04-25">
+    <_9:maker rdf:resource="http://localhost:5000/entities/luc-vanneste#id"/>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_3:reviewOf rdf:resource="urn:isbn:9789064450624"/>
+    <_4:abstract>Boekbespreking: Erik de Bruyn, Berchem, epo, 2009</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
+    <_5:title>Boekbestpreking 'Rooddruk voor een nieuw socialisme'</_5:title>
+    <_5:creator>Luc Vanneste</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/george-dafermos#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>George Dafermos</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/tere-vaden#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Tere Vadén</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:giovanni-arrighi,2009-04-22">
+    <_3:interviewer rdf:resource="http://localhost:5000/entities/david-harvey#id"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_3:interviewee rdf:resource="http://localhost:5000/entities/giovani-arrighi#id"/>
+    <_4:abstract>The author of Long Twentieth Century and Adam Smith in Beijing, interviewed by David Harvey, on dispossession and development, capitalist crises, China’s future. The political education of a teenage factory-manager, via African liberation struggles and autonomia operaia; and influences—Braudel, Gramsci, Smith, Marx—in Arrighi’s work.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
+    <_5:title>Giovanni Arrighi: The Winding Paths of Capital</_5:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:frank-van-massenhoven,2009-04-25">
+    <_3:interviewer rdf:resource="http://localhost:5000/entities/jan-de-zutter#id"/>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_3:interviewee rdf:resource="http://localhost:5000/entities/frank-van-massenhoven#id"/>
+    <_4:abstract>Twee jaar geleden werd hij Overheidsmanager van het Jaar en vandaag leidt hij een federale overheidsdienst met tevreden ambtenaren die hun werkuren zelf regelen, thuis kunnen werken en trots zijn op hun radicaal vernieuwde dienst. Heeft Frank Van Massenhove ontdekt hoe je overheidsdiensten de 21ste eeuw kunt inloodsen?</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
+    <_5:title>Frank Van Massenhoven: 'Word weer de regisseur van je eigen leven'</_5:title>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</_6:endingPage>
   </rdf:Description>
   <rdf:Description rdf:about="urn:isbn:9780230016545">
     <_3:isbn>9780230016545</_3:isbn>
+    <_5:publisher>Macmillan</_5:publisher>
+    <_4:issued>2007</_4:issued>
     <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
     <_4:bibliographicCitation>Ramachandra Guha, India after Gandhi: The History of the World’s Largest Democracy, Macmillan: London 2007, £25, hardback, 900 pp, 978 0 230 01654 5.</_4:bibliographicCitation>
-    <_5:creator>Ramachandra Guha</_5:creator>
-    <_5:publisher>Macmillan</_5:publisher>
     <_5:title>India after Gandhi: The History of the World’s Largest Democracy</_5:title>
-    <_4:issued>2007</_4:issued>
+    <_5:creator>Ramachandra Guha</_5:creator>
   </rdf:Description>
-  <rdf:Description rdf:about="tag:wie-op-de-rem-staat,2009-04-25">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</_6:startingPage>
-    <_5:creator>Jan de Zutter</_5:creator>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</_6:endingPage>
-    <_5:title>Wie op de rem staat, geraakt niet vooruit</_5:title>
-    <_4:abstract>Als we de peilingen mogen geloven - en dat mogen we beslist niet - krijgt links in Vlaanderen op 7 juni een oplawaai van jewelste. Aan de halte van een nieuw Vlaams bestuur moeten sp.a en Groen! een lange rij centrumrechtse, populistische, rechtse en radicaal-rechtse partijen laten voorgaan. Zoals het er nu uitziet, zal links op de volgende bus moeten wachten. Als die nog komt. Want rechts Vlaanderen zal ongetwijfeld met genoegen gebruik maken van publieke diensten om ze daarna met evenveel plezier op een streng dieet te zetten. We zien het vandaag gebeuren met de reddingsoperaties voor de banken en de steunmaatregelen voor de economie. In tegenstelling tot de VS, waar een minderheid die hard republikeinen tenminste het fatsoen had te leven naar hun mythe van de vrije markt en dus overheidssteun publiekelijk afwezen, is er in Europa amper een liberaal te vinden die niet gretig het handje uitsteekt om te kunnen eten uit de ruif van de gemeenschap. Na de maaltijd wordt er steevast semantisch nagetafeld over het onderscheid tussen de sterke overheid en de vette overheid. Voor de steunmaatregelen was een sterke overheid noodzakelijk, na de maaltijd wordt er geschamperd over de veel te vette overheid. Zo weinig respect voor de solidariteit die gewone mensen opbrengen via de publieke dienstverlening werd zelden vertoond. Een mens zou in deze discussie op z'n minst een vorm van wederkerigheid mogen verwachten.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/jan-de-zutter#id"/>
-    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
+  <rdf:Description rdf:about="tag:sampol-issue-16-04,2009-04-26">
+    <_6:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</_6:volume>
+    <_4:issued>2009-04-01</_4:issued>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+    <_5:isPartOf rdf:resource="urn:issn:1372-0740"/>
+    <_5:title>Samenleving &amp; Poltiek jaargang 16, 2009, nr.4 (april)</_5:title>
+    <_6:number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</_6:number>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/athina-karatzogianni#id">
-    <_9:name>Athina Karatzogianni</_9:name>
+  <rdf:Description rdf:about="http://localhost:5000/entities/annie-hondeghem#id">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Annie Hondeghem</_9:name>
   </rdf:Description>
-  <rdf:Description rdf:about="tag:sociaaldemocraten-en-populisme,2009-04-25">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</_6:startingPage>
-    <_5:creator>Maarten Van Alstein</_5:creator>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</_6:endingPage>
-    <_5:title>Sociaaldemocraten en populisme. Kloven en bruggen</_5:title>
-    <_4:abstract>Het populisme eist in de hedendaagse politiek een belangrijke rol voor zich op. In zijn opmerkelijke essay over dit fenomeen beschrijft David Van Reybrouck het succes van populistische politici en partijen in het licht van de diploma- en cultuurkloof in onze samenleving, de nieuwe maatschappelijke breuklijn. In het populisme herkent hij de stem van laaggeschoolden van wie de betrokkenheid bij de democratie en de samenleving onder druk is komen te staan. Van Reybrouck wil deze stem ernstig nemen, en daarom pleit hij niet voor minder, maar voor meer en beter populisme. Hier wordt de vraag gesteld hoe sociaaldemocraten moeten omgaan met het betoog van David Van Reybrouck.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/maarten-van-alstein#id"/>
-    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
+  <rdf:Description rdf:about="http://localhost:5000/entities/maarten-luts#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Maarten Luts</_9:name>
   </rdf:Description>
-  <rdf:Description rdf:about="tag:sumit-sarkar-on-guha,2009-04-25">
+  <rdf:Description rdf:about="http://localhost:5000/entities/mike-davis#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Mike Davis</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:goran-therborn-on-heinsohn,2009-04-25">
+    <_9:maker rdf:resource="http://localhost:5000/entities/goran-therborn#id"/>
     <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_5:creator>Sumit Sarkar</_5:creator>
-    <_3:reviewOf rdf:resource="urn:isbn:9780230016545"/>
-    <_5:title>Sumit Sarkar on Guha, India after Gandhi</_5:title>
-    <_4:abstract>The subcontinental giant as ‘unnatural nation’ in the first history of the post-Independence era.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/sumit-sarkar#id"/>
+    <_3:reviewOf rdf:resource="urn:isbn:9783492251242"/>
+    <_4:abstract>Political demography of the Mid-East youth bulge as threat to Western power.</_4:abstract>
     <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/david-harvey#id">
-    <_9:name>David Harvey</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/goran-therborn#id">
-    <_9:name>Göran Therborn</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_5:title>Göran Therborn on Heinsohn, Söhne und Weltmacht</_5:title>
+    <_5:creator>Göran Therborn</_5:creator>
   </rdf:Description>
   <rdf:Description rdf:about="http://localhost:5000/entities/mil-kooyman#id">
-    <_9:name>Mil Kooyman</_9:name>
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Mil Kooyman</_9:name>
   </rdf:Description>
-  <rdf:Description rdf:about="tag:class-and-capital-in-peer,2009-04-22">
+  <rdf:Description rdf:about="http://localhost:5000/entities/jan-de-zutter#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Jan de Zutter</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/athina-karatzogianni#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Athina Karatzogianni</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:het-beroepenhuis,2009-04-25">
+    <_9:maker rdf:resource="http://localhost:5000/entities/mil-kooyman#id"/>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</_6:startingPage>
     <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">121</_6:startingPage>
-    <_5:creator>Michel Bauwens</_5:creator>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">142</_6:endingPage>
-    <_5:title>Class and capital in peer production</_5:title>
-    <_4:abstract>The aim of this paper is to make the case that peer production offers a unique chance to transcend capitalism, and that peer-to-peer movements represent the succession of industrial-society based socialisms. The paper describes the salient characteristics of peer production before going on to explore whether it is ‘transcendent’ or ‘immanent’ to the market system, concluding that it is both in that it creates a new form of capitalism and also points out how that new form might be overcome. Following a review of the hybrid economic forms emerging today, I formulate the hypothesis that peer production is actually a hyperproductive mode, forcing for-profit entities to adapt to its characteristics, thereby further integrating it into the existing political economy, but not without the transformative effects of its market transcending aspects. After examining the possible expansion of peer-production modalities to physical manufacturing, I also examine the class aspects of commons and sharing-based platforms and hypothesise the emergence of a new section of capital, netarchical capitalists, who enable and empower participation, but also monetise it and attempt to control it.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/michel-bauwens#id"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</_6:endingPage>
+    <_4:abstract>Er is in de voorbije regeerperiode waarschijnlijk geen toespraak geweest van minister Vandenbroucke waarin hij niet minstens een paar keer de woorden talenten en talentontwikkeling heeft laten vallen. Ondertussen is nagenoeg iedereen er van overtuigd dat de talenten van jongeren het belangrijkste criterium moet zijn voor hun studie- en beroepskeuze. Talentontwikkeling in ons onderwijs is dan ook meer dan noodzakelijk. Sinds 1999 timmert Het Beroepenhuis aan de (talenten)weg en op 4 maart 2005 gingen de deuren van het huis effectief open. Een schot in de roos.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
+    <_5:title>Het Beroepenhuis (Project in de kijker)</_5:title>
+    <_5:creator>Mil Kooyman</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/barry-schwabsky#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Barry Schwabsky</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:colletti-on,2009-04-23">
+    <_9:maker rdf:resource="http://localhost:5000/entities/geoff-mann#id"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_4:abstract>What political opportunities arise from the current financial crisis? In a critical response to Robin Blackburn’s essay in NLR 50, Geoff Mann proposes the insights of Marx’s theory of value as a starting point for thinking beyond capitalist social relations—as Blackburn’s measures, he argues, do not.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
+    <_5:title>Colletti on the Credit Crunch</_5:title>
+    <_5:creator>Geoff Mann</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/robin-blackburn#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Robin Blackburn</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/david-harvey#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>David Harvey</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:urn:isbn:9780262072922">
+    <_3:isbn>9780262072922</_3:isbn>
+    <_5:publisher>MIT Press</_5:publisher>
+    <_4:issued>2008</_4:issued>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+    <_4:bibliographicCitation>Boris Groys, Art Power, MIT Press: Cambridge 2008, $22.95, hardback, 190 pp, 978 0 262 07292 2.</_4:bibliographicCitation>
+    <_5:creator>Boris Groys</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:a-definition-and-criticism,2009-04-22">
+    <_7:authorString>Tere Vadén and Juha Suoranta</_7:authorString>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">159</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">177</_6:endingPage>
+    <_4:abstract>When ÎiÏek (2002b) defines his idea of cybercommunism using an adaptation of the Leninist formula ‘Socialism = free access to internet + the power of the soviets’, he omits the crucial part about electricity. The cybercommunist idea that the information society is more ‘spectral’ and ‘malleable’ than were the previous ‘crudely’ economical societies conceals the question of what types of communities it favours. The political economy of cybercommunism also demands an analysis of the material conditions of cyber-freedom that can be conceptualised, for instance, in terms of levels of decreasing alienation.</_4:abstract>
     <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
+    <_5:title>A definition and criticism of cybercommunism</_5:title>
+    <_5:creator>Tere Vadén</_5:creator>
+    <_5:creator>Juha Suoranta</_5:creator>
+    <_9:maker rdf:resource="http://localhost:5000/entities/juha-suoranta#id"/>
+    <_9:maker rdf:resource="http://localhost:5000/entities/tere-vaden#id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/chris-land#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Chris Land</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:outplacement-take,2009-04-25">
+    <_9:maker rdf:resource="http://localhost:5000/entities/philippe-diepvents#id"/>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</_6:endingPage>
+    <_4:abstract>'Herstel het vertrouwen' is de gemeenschappelijke titel voor de relanceplannen die de maatregelen bundelen die de federale en Vlaamse overheden zullen nemen om de effecten van de financiële crisis in ons land te temperen. Heel wat van deze maatregelen moeten nog geconcretiseerd en in de praktijk omgezet worden. De voorbije maanden was vooral de discussie rond het afschaffen van de doelgroepenvermindering, die vanuit het uitzonderlijk akkoord van de sociale partners werd overgenomen, brandend actueel. De plannen bevatten echter uiteraard nog veel meer maatregelen, die op initiatief van de politieke overheden werden genomen. Met dit artikel willen we de aandacht vestigen op een aantal elementen uit de relanceplannen die tot nog toe onder de radar bleven. Met name gaat het over die bijsturingen die te maken hebben met de regelgeving rond outplacement.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
+    <_5:title>Outplacement: take the money and run</_5:title>
+    <_5:creator>Philippe Diepvents</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:met-huidig-beleid,2009-04-25">
+    <_9:maker rdf:resource="http://localhost:5000/entities/thierry-kesteloot#id"/>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</_6:endingPage>
+    <_4:abstract>Stijgende voedselprijzen en voedselrellen in vele steden in ontwikkelingslanden haalden de pers in 2008. Deze crisis ging niet onopgemerkt voorbij. De media-aandacht vertaalde zich in een buitengewone politieke belangstelling. Maar sindsdien werd de voedselcrisis opgevolgd door de financiële en economische crisis. De voedselprijzen duiken in elkaar, en staan veel lager dan één jaar geleden. Is het einde van de voedselcrisis dichterbij gekomen? Niet met het bestaande beleid, aangezien het mede aan de oorzaak van de crisis ligt.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
+    <_5:title>Met huidig beleid raakt voedselcrisis niet opgelost!</_5:title>
+    <_5:creator>Thierry Kesteloot</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:freedoms-triumph,2009-04-23">
+    <_9:maker rdf:resource="http://localhost:5000/entities/dylan-riley#id"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_4:abstract>Reviving its classical definition, ‘rule of the propertyless’, Luciano Canfora recasts the story of democracy in Europe as one of successive defeats, with lessons from Louis Napoleon on the use of suffrage as legitimation for oligarchic rule. Dylan Riley assesses a remarkable historical polemic from the Italian philologist.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
+    <_5:title>Freedom's Triumph?</_5:title>
+    <_5:creator>Dylan Riley</_5:creator>
   </rdf:Description>
   <rdf:Description rdf:about="urn:isbn:9789064450624">
     <_5:title>Rooddruk voor een nieuw socialisme</_5:title>
-    <_5:creator>Erik De Bruyn</_5:creator>
-    <_3:isbn>9789064450624</_3:isbn>
-    <_5:publisher>epo</_5:publisher>
     <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+    <_5:creator>Erik De Bruyn</_5:creator>
+    <_5:publisher>epo</_5:publisher>
+    <_3:isbn>9789064450624</_3:isbn>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/chris-land#id">
-    <_9:name>Chris Land</_9:name>
+  <rdf:Description rdf:about="http://localhost:5000/entities/nathalie-sonck#id">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Nathalie Sonck</_9:name>
   </rdf:Description>
   <rdf:Description rdf:about="tag:knowledge-based-society,2009-04-22">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</_6:startingPage>
-    <_5:creator>Cosma Orsi</_5:creator>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</_6:endingPage>
-    <_5:title>Knowledge-based society, peer production and the common good</_5:title>
-    <_4:abstract>This article investigates the societal conditions that might help the establishment of peer-to-peer modes of production. First, the context within which such a new model is emerging — the neoliberal knowledge-based-societies — is described, and its shortcomings unveiled; and second, a robust argument is provided for the moral legitimation of an alternative societal vision, including two structural policies that are likely to facilitate the establishment and further development of peer-to-peer practices.</_4:abstract>
     <_9:maker rdf:resource="http://localhost:5000/entities/cosma-orsi#id"/>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</_6:endingPage>
+    <_4:abstract>This article investigates the societal conditions that might help the establishment of peer-to-peer modes of production. First, the context within which such a new model is emerging — the neoliberal knowledge-based-societies — is described, and its shortcomings unveiled; and second, a robust argument is provided for the moral legitimation of an alternative societal vision, including two structural policies that are likely to facilitate the establishment and further development of peer-to-peer practices.</_4:abstract>
     <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
+    <_5:title>Knowledge-based society, peer production and the common good</_5:title>
+    <_5:creator>Cosma Orsi</_5:creator>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/robin-blackburn#id">
-    <_9:name>Robin Blackburn</_9:name>
+  <rdf:Description rdf:about="http://rdf.freebase.com/rdf/en.new_left_review">
+    <_5:title>New Left Review</_5:title>
+    <_3:issn>0028-6060</_3:issn>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+    <_3:shortTitle>nlr</_3:shortTitle>
+    <_9:homepage rdf:resource="http://www.newleftreview.org/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:value-theory,2009-04-23">
+    <_9:maker rdf:resource="http://localhost:5000/entities/robin-blackburn#id"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_4:abstract>In answer to Mann, Blackburn explores the paradoxes of fictitious capital, underwritten by super-exploitation of China’s producers. A public-utility credit system, democratic forms of nationalization and mechanisms to socialize investment as steps towards financial dual power.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
+    <_5:title>Value Theory and the Chinese Worker</_5:title>
+    <_5:creator>Robin Blackburn</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/phoebe-moore#id">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Phoebe Moore</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:exploitation-of-the-self,2009-04-22">
+    <_7:authorString>Phoebe Moore and Paul A. Taylor</_7:authorString>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</_6:endingPage>
+    <_4:abstract>Free and open-source software (FOSS) communities constitute an arena in which thousands of users voluntarily explore design codes, spot bugs in codes, and make contributions to the code in a fashion at odds with the otherwise hugely competitive software market. This computerisation movement emerged as a challenge to the domination of such behemoth firms as Microsoft and IBM, and is portrayed as having a revolutionary ultimate goal: ‘to provide free software to do all of the jobs computer users want to do’ (Free Software Foundation, 2008). We ask to what extent FOSS actually challenges the orthodoxy: does ego-less programming of the information bazaar really free participants from the stuffy pews of the cathedral, and challenge the essence of capitalism? Knowledge emerges only through invention and re-invention, through the restless, impatient, continuing, hopeful inquiry men pursue in the world, with the world and with each other.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
+    <_5:title>Exploitation of the self in community-based software production: Workers’ freedoms or firm foundations?</_5:title>
+    <_5:creator>Phoebe Moore</_5:creator>
+    <_5:creator>Paul A. Taylor</_5:creator>
+    <_9:maker rdf:resource="http://localhost:5000/entities/paul-a.-taylor#id"/>
+    <_9:maker rdf:resource="http://localhost:5000/entities/phoebe-moore#id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:erik-meynen,2009-04-25">
+    <_5:title>Erik Meynen (Portfolio)</_5:title>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</_6:endingPage>
+    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</_6:startingPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:issn:1372-0740">
+    <_5:publisher>Stichting Gerrit Kreveld</_5:publisher>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
+    <_3:shortTitle>sampol</_3:shortTitle>
+    <_5:title>Samenleving en Politiek</_5:title>
+    <_3:issn>1372-0740</_3:issn>
+    <_9:homepage rdf:resource="http://stichtinggerritkreveld.be.res7.mijnpreview.com/ECMS_CLIENT_SGK/pages/showpage.php?id=13"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/paul-a.-taylor#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Paul A. Taylor</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:no-measure-for-culture,2009-04-22">
+    <_7:authorString>Steffen Böhm and Chris Land</_7:authorString>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</_6:endingPage>
+    <_4:abstract>This paper explores articulations of the value of investment in culture and the arts through a critical discourse analysis of policy documents, reports and academic commentary since 1997. It argues that in this period, discourses around the value of culture have moved from a focus on the direct economic contributions of the culture industries to their indirect economic benefits. These indirect benefits are discussed here under three main headings: creativity and innovation, employability, and social inclusion. These are in turn analysed in terms of three forms of capital: human, social and cultural. The paper concludes with an analysis of this discursive shift through the lens of autonomist Marxist concerns with the labour of social reproduction. It is our argument that, in contemporary policy discourses on culture and the arts, the government in the UK is increasingly concerned with the use of culture to form the social in the image of capital. As such, we must turn our attention beyond the walls of the factory in order to understand the contemporary capitalist production of value and resistance to it.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
+    <_5:title>No measure for culture? Value in the new economy</_5:title>
+    <_5:creator>Chris Land</_5:creator>
+    <_5:creator>Steffen Böhm</_5:creator>
+    <_9:maker rdf:resource="http://localhost:5000/entities/steffen-bohm#id"/>
+    <_9:maker rdf:resource="http://localhost:5000/entities/chris-land#id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:obama-at-manassas,2009-04-23">
+    <_9:maker rdf:resource="http://localhost:5000/entities/mike-davis#id"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_4:abstract>Does Obama’s victory signal a political turning point comparable to 1980 or 1932? Mike Davis maps county-level changes, from below—minority-majority demographics, subprime suburbs, white-collar financial worries—catalysed by the 2008 campaign. From above, realignment of American capital behind the Silicon President.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
+    <_5:title>Obama at Manassas</_5:title>
+    <_5:creator>Mike Davis</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/adam-arvidsson#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Adam Arvidsson</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/giovani-arrighi#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Giovani Arrighi</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/steffen-bohm#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Steffen Böhm</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:barry-schwabsky-on-groys,2009-04-25">
+    <_9:maker rdf:resource="http://localhost:5000/entities/barry-schwabsky#id"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_3:reviewOf rdf:resource="tag:urn:isbn:9780262072922"/>
+    <_4:abstract>Essays on aesthetics and politics, founded on the disconcerting insights of late-Soviet conceptualism.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
+    <_5:title>Barry Schwabsky on Groys, Art Power</_5:title>
+    <_5:creator>Barry Schwabsky</_5:creator>
   </rdf:Description>
   <rdf:Description rdf:about="http://localhost:5000/entities/nancy-fraser#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <_9:name>Nancy Fraser</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/maarten-van-alstein#id">
-    <_9:name>Maarten Van Alstein</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
   </rdf:Description>
   <rdf:Description rdf:about="tag:parallel-visions,2009-04-22">
-    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</_6:startingPage>
-    <_5:creator>Athina Karatzogianni</_5:creator>
-    <_5:creator>Phoebe Moore</_5:creator>
     <_7:authorString>Phoebe Moore and Athina Karatzogianni</_7:authorString>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
     <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</_6:endingPage>
+    <_4:abstract>The 'parallel visions' proposed by the contributing authors to this issue are intended to challenge the dominant themes of capitalist organisation and production through an in-depth look at peer-to-peer production and the development of software and sharing – a movement which, the authors argue, is based on new visions for value systems, ethics and governance. We have organised their contributions into sections based on the relevant aspects of these economies in order to look into the politics of how these networks are governed, the likelihood of new avenues for worker organisation, and the possibilities for entirely new models of economies that can be classified outside the hegemony of contemporary neoliberal capitalism.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
     <rdfs:comment>Editorial</rdfs:comment>
     <_5:title>Parallel visions of peer production</_5:title>
-    <_4:abstract>The 'parallel visions' proposed by the contributing authors to this issue are intended to challenge the dominant themes of capitalist organisation and production through an in-depth look at peer-to-peer production and the development of software and sharing – a movement which, the authors argue, is based on new visions for value systems, ethics and governance. We have organised their contributions into sections based on the relevant aspects of these economies in order to look into the politics of how these networks are governed, the likelihood of new avenues for worker organisation, and the possibilities for entirely new models of economies that can be classified outside the hegemony of contemporary neoliberal capitalism.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/phoebe-moore#id"/>
+    <_5:creator>Athina Karatzogianni</_5:creator>
+    <_5:creator>Phoebe Moore</_5:creator>
     <_9:maker rdf:resource="http://localhost:5000/entities/athina-karatzogianni#id"/>
-    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
+    <_9:maker rdf:resource="http://localhost:5000/entities/phoebe-moore#id"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://localhost:5000/entities/annie-hondeghem#id">
-    <_9:name>Annie Hondeghem</_9:name>
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="tag:a-definition-and-criticism,2009-04-22">
+  <rdf:Description rdf:about="tag:feminism-capitalism,2009-04-22">
+    <_9:maker rdf:resource="http://localhost:5000/entities/nancy-fraser#id"/>
     <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
-    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">159</_6:startingPage>
-    <_5:creator>Tere Vadén</_5:creator>
-    <_5:creator>Juha Suoranta</_5:creator>
-    <_7:authorString>Tere Vadén and Juha Suoranta</_7:authorString>
-    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">177</_6:endingPage>
-    <_5:title>A definition and criticism of cybercommunism</_5:title>
-    <_4:abstract>When ÎiÏek (2002b) defines his idea of cybercommunism using an adaptation of the Leninist formula ‘Socialism = free access to internet + the power of the soviets’, he omits the crucial part about electricity. The cybercommunist idea that the information society is more ‘spectral’ and ‘malleable’ than were the previous ‘crudely’ economical societies conceals the question of what types of communities it favours. The political economy of cybercommunism also demands an analysis of the material conditions of cyber-freedom that can be conceptualised, for instance, in terms of levels of decreasing alienation.</_4:abstract>
-    <_9:maker rdf:resource="http://localhost:5000/entities/juha-suoranta#id"/>
-    <_9:maker rdf:resource="http://localhost:5000/entities/tere-vaden#id"/>
+    <_4:abstract>Do feminism and neoliberalism share a secret affinity? Nancy Fraser on the co-option of gender politics by the ‘new spirit’ of post-Fordist capitalism, and subordination of its radical critique to a World Bank agenda. Might a neo-Keynesian shift offer prospects for socialist-feminist renewal?</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
+    <_5:title>Feminism, Capitalism and the Cunning of History</_5:title>
+    <_5:creator>Nancy Fraser</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:the-ethical-economy,2009-04-22">
+    <_9:maker rdf:resource="http://localhost:5000/entities/adam-arvidsson#id"/>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</_6:endingPage>
+    <_4:abstract>Social production has risen on the agenda of the social sciences. Yet most observers have been reluctant to confront the question of the value of these practices. Instead they have mostly been characterised as ‘free’, ‘common’ or beyond value. This article argues that far from being free, social production abides to a particular value logic, an ‘ethical economy’ where value is related not to the input of labour time, but to the ability to give productive organisation to a diffuse connectivity or, which is the same thing, to transform weak ties into affectively significant strong ones. The article concludes that progressive politics should work with this new emerging value logic.</_4:abstract>
     <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
+    <_5:title>The ethical economy: Towards a post-capitalist theory of value</_5:title>
+    <_5:creator>Adam Arvidsson</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:politieke-peilingen,2009-04-25">
+    <_7:authorString>Jaak Billiet, Nathalie Sonck</_7:authorString>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</_6:endingPage>
+    <_4:abstract>Peilingen vertalen individuele opvattingen in een collectieve publieke opinie, maar indien dit op een gebrekkige en vertekende wijze gebeurt, ontstaat een misleidend beeld dat afwijkt van de werkelijke zorgen van de bevolking.  Door het rapporteren van deze peilingen in de media wordt fictie gecreëerd.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
+    <_5:title>Politieke peilingen in de media: fictie of frictie?</_5:title>
+    <_5:creator>Nathalie Sonck</_5:creator>
+    <_5:creator>Jaak Billiet</_5:creator>
+    <_9:maker rdf:resource="http://localhost:5000/entities/jaak-billiet#id"/>
+    <_9:maker rdf:resource="http://localhost:5000/entities/nathalie-sonck#id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:sumit-sarkar-on-guha,2009-04-25">
+    <_9:maker rdf:resource="http://localhost:5000/entities/sumit-sarkar#id"/>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_3:reviewOf rdf:resource="urn:isbn:9780230016545"/>
+    <_4:abstract>The subcontinental giant as ‘unnatural nation’ in the first history of the post-Independence era.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:new-left-review-issue-56,2009-04-23"/>
+    <_5:title>Sumit Sarkar on Guha, India after Gandhi</_5:title>
+    <_5:creator>Sumit Sarkar</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/philippe-diepvents#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Philippe Diepvents</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:isbn:9783492251242">
+    <_3:isbn>9783492251242</_3:isbn>
+    <_5:publisher>Piper</_5:publisher>
+    <_4:issued>2008</_4:issued>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+    <_4:bibliographicCitation>Gunnar Heinsohn, Söhne und Weltmacht: Terror im Aufstieg und Fall der Nationen, Piper: Munich 2008, €9.20, paperback,189 pp, 978 3 492 25124 2.</_4:bibliographicCitation>
+    <_5:title>Söhne und Weltmacht: Terror im Aufstieg und Fall der Nationen</_5:title>
+    <_5:creator>Gunnar Heinsohn</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:wie-op-de-rem-staat,2009-04-25">
+    <_9:maker rdf:resource="http://localhost:5000/entities/jan-de-zutter#id"/>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</_6:endingPage>
+    <_4:abstract>Als we de peilingen mogen geloven - en dat mogen we beslist niet - krijgt links in Vlaanderen op 7 juni een oplawaai van jewelste. Aan de halte van een nieuw Vlaams bestuur moeten sp.a en Groen! een lange rij centrumrechtse, populistische, rechtse en radicaal-rechtse partijen laten voorgaan. Zoals het er nu uitziet, zal links op de volgende bus moeten wachten. Als die nog komt. Want rechts Vlaanderen zal ongetwijfeld met genoegen gebruik maken van publieke diensten om ze daarna met evenveel plezier op een streng dieet te zetten. We zien het vandaag gebeuren met de reddingsoperaties voor de banken en de steunmaatregelen voor de economie. In tegenstelling tot de VS, waar een minderheid die hard republikeinen tenminste het fatsoen had te leven naar hun mythe van de vrije markt en dus overheidssteun publiekelijk afwezen, is er in Europa amper een liberaal te vinden die niet gretig het handje uitsteekt om te kunnen eten uit de ruif van de gemeenschap. Na de maaltijd wordt er steevast semantisch nagetafeld over het onderscheid tussen de sterke overheid en de vette overheid. Voor de steunmaatregelen was een sterke overheid noodzakelijk, na de maaltijd wordt er geschamperd over de veel te vette overheid. Zo weinig respect voor de solidariteit die gewone mensen opbrengen via de publieke dienstverlening werd zelden vertoond. Een mens zou in deze discussie op z'n minst een vorm van wederkerigheid mogen verwachten.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
+    <_5:title>Wie op de rem staat, geraakt niet vooruit</_5:title>
+    <_5:creator>Jan de Zutter</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/johan-soderberg#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Johan Söderberg</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/geoff-mann#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Geoff Mann</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/sumit-sarkar#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Sumit Sarkar</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:class-and-capital-in-peer,2009-04-22">
+    <_9:maker rdf:resource="http://localhost:5000/entities/michel-bauwens#id"/>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">121</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">142</_6:endingPage>
+    <_4:abstract>The aim of this paper is to make the case that peer production offers a unique chance to transcend capitalism, and that peer-to-peer movements represent the succession of industrial-society based socialisms. The paper describes the salient characteristics of peer production before going on to explore whether it is ‘transcendent’ or ‘immanent’ to the market system, concluding that it is both in that it creates a new form of capitalism and also points out how that new form might be overcome. Following a review of the hybrid economic forms emerging today, I formulate the hypothesis that peer production is actually a hyperproductive mode, forcing for-profit entities to adapt to its characteristics, thereby further integrating it into the existing political economy, but not without the transformative effects of its market transcending aspects. After examining the possible expansion of peer-production modalities to physical manufacturing, I also examine the class aspects of commons and sharing-based platforms and hypothesise the emergence of a new section of capital, netarchical capitalists, who enable and empower participation, but also monetise it and attempt to control it.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
+    <_5:title>Class and capital in peer production</_5:title>
+    <_5:creator>Michel Bauwens</_5:creator>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:the-hacker-movement,2009-04-22">
+    <_7:authorString>George Dafermos and Johan Söderberg</_7:authorString>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</_6:endingPage>
+    <_4:abstract>Examining the way in which capital exploits the volunteer labour of free software developers, this article argues that there is a historical continuity between hackers and labour struggle. The common denominator is their rejection of alienated work practices, which suggests that corporate involvement in the computer underground, far from inhibiting further struggles by hackers, may function as a catalyst for them.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
+    <_5:title>The hacker movement as a continuation of labour struggle</_5:title>
+    <_5:creator>Johan Söderberg</_5:creator>
+    <_5:creator>George Dafermos</_5:creator>
+    <_9:maker rdf:resource="http://localhost:5000/entities/george-dafermos#id"/>
+    <_9:maker rdf:resource="http://localhost:5000/entities/johan-soderberg#id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:cyberconflic-at-the-edge,2009-04-22">
+    <_7:authorString>Athina Karatzogianni and George Michaelides</_7:authorString>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">143</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">158</_6:endingPage>
+    <_4:abstract>This paper differentiates between different levels of conflict in the opensource movement and discusses the role conflict and self-organisation play in the emergence of structures of leadership emergence and the bifurcation into core and peripheral groups and soft control by cryptohierarchies; in the different levels of group polarisation and conflict between communities negotiating their identity, strategy, coordination and complexity; and lastly, in the dynamic relationships between hierarchies and networks. These dynamics are forcing open-source communities to exist at the edge of chaos, and to constantly engage in lines of flight and resistance from the system of global control, while ignoring current capitalist practices and ‘growing their own’ models of self-organising knowledge creation and exchange.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:capital-and-class-issue-97,2009-04-22"/>
+    <_5:title>Cyberconflict at the edge of chaos: Cryptohierarchies and self-organisation in the open-source movement</_5:title>
+    <_5:creator>Athina Karatzogianni</_5:creator>
+    <_5:creator>George Michaelides</_5:creator>
+    <_9:maker rdf:resource="http://localhost:5000/entities/athina-karatzogianni#id"/>
+    <_9:maker rdf:resource="http://localhost:5000/entities/george-michaelides#id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/maarten-van-alstein#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Maarten Van Alstein</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:new-left-review-issue-56,2009-04-23">
+    <_6:volume rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</_6:volume>
+    <_4:issued>2009-03-09</_4:issued>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+    <_5:isPartOf rdf:resource="http://rdf.freebase.com/rdf/en.new_left_review"/>
+    <_5:title>New Left Review 56 March-April 2009</_5:title>
+    <_6:number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</_6:number>
+    <_9:depiction rdf:resource="http://www.newleftreview.org/assets/images/NLR56cover.gif"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/frank-van-massenhoven#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Frank Van Massenhoven</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/juha-suoranta#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Juha Suoranta</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/cosma-orsi#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Cosma Orsi</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost:5000/entities/luc-vanneste#id">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <_9:name>Luc Vanneste</_9:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="tag:sociaaldemocraten-en-populisme,2009-04-25">
+    <_9:maker rdf:resource="http://localhost:5000/entities/maarten-van-alstein#id"/>
+    <_6:startingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</_6:startingPage>
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <_6:endingPage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</_6:endingPage>
+    <_4:abstract>Het populisme eist in de hedendaagse politiek een belangrijke rol voor zich op. In zijn opmerkelijke essay over dit fenomeen beschrijft David Van Reybrouck het succes van populistische politici en partijen in het licht van de diploma- en cultuurkloof in onze samenleving, de nieuwe maatschappelijke breuklijn. In het populisme herkent hij de stem van laaggeschoolden van wie de betrokkenheid bij de democratie en de samenleving onder druk is komen te staan. Van Reybrouck wil deze stem ernstig nemen, en daarom pleit hij niet voor minder, maar voor meer en beter populisme. Hier wordt de vraag gesteld hoe sociaaldemocraten moeten omgaan met het betoog van David Van Reybrouck.</_4:abstract>
+    <_5:isPartOf rdf:resource="tag:sampol-issue-16-04,2009-04-26"/>
+    <_5:title>Sociaaldemocraten en populisme. Kloven en bruggen</_5:title>
+    <_5:creator>Maarten Van Alstein</_5:creator>
   </rdf:Description>
 </rdf:RDF>

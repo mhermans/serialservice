@@ -8,4 +8,8 @@
 
 <h2>${c.person.name}</h2>
 
+    <div class="articleInfo" py:for="a in c.articles">
+        ${a.title}
+    </div>
+
 </div>

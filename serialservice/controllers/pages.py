@@ -99,8 +99,10 @@ class PagesController(BaseController):
     def person(self, uri):
         from rdflib import URIRef
         c.person = Person(URIRef(''.join(['http://localhost:5000/entities/', uri, '#id']))) #XXX zorg ervoor dat dit uniek is!
+        #p = Person("<http:://localhost:5000/entities/david-harvey#id>")
+        #p.title = "test"
+        c.articles = Article.filter_by(makers=[c.person]) #Article.filter_by() #XXX dit werkt niet
         c.title = c.person.name 
         c.bodySection = "person"
-        #raise "hi"
         c.baseUrl = "http://localhost:5000/"
         return render("base.xml")
