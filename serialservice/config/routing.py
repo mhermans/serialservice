@@ -30,5 +30,7 @@ def make_map():
     map.connect('mapping5', '/serials/:shortTitle/:volume/:number', controller='pages', action='issue')
 
     map.connect('mapping6', '/submit', controller='pages', action='submit' )
-    map.connect('mapping7', '/entities/:uri', controller='pages', action='person' )
+    map.connect('mapping7', '/entities/:uri', controller='pages', action='person', requirements = { 'fragment':'#id' }  )
+
+
     return map

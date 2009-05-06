@@ -28,10 +28,10 @@
     
     <div id="issueInfo" class="infobox">
 
-        <span id="issueCover" style="float:left;">
-            <img py:if="c.issue.coverImg" src="${c.issue.coverImg.resUri}" width="150" heigth="200"/>
-        </span>
-        <span id="issueData">
+        <div id="issueCover" style="float:left;">
+            <img py:if="c.issue.coverImg" src="${c.issue.coverImg.resUri}" width="150" height="200" alt="${c.issue.periodical.title} cover"/>
+        </div>
+        <div id="issueData">
             <py:choose test="">
                 <p py:when="c.issue.volume and c.issue.number">Volume ${c.issue.volume}, nummer ${c.issue.number}</p>
                 <p py:when="c.issue.volume and not c.issue.number">Volume ${c.issue.volume}</p>
@@ -40,7 +40,7 @@
             </py:choose>
             <p py:if="c.issue.pubdate">Published ${c.issue.pubdate}</p>
             <p>Contributors: ${opsomming(c.contributors)}.</p>
-        </span>
+        </div>
         <div style="clear:both;" />
 
     </div>

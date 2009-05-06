@@ -37,7 +37,7 @@ class Globals(object):
             makers = []
             for c in a.creators:
                 personSlug = '-'.join(unicodedata.normalize('NFKD', c).encode('ascii','ignore').split()).lower()
-                uri = ''.join(['<', "http://localhost:5000/entities/", personSlug, '>'])
+                uri = ''.join(['<', "http://localhost:5000/entities/", personSlug, '#id', '>'])
                 p = Person(uri)
                 p.name = c
                 makers.append(p)
@@ -50,7 +50,7 @@ class Globals(object):
 
             for ie in ies:
                 personSlug = '-'.join(unicodedata.normalize('NFKD', ie).encode('ascii','ignore').split()).lower()
-                uri = ''.join(['<', "http://localhost:5000/entities/", personSlug, '>'])
+                uri = ''.join(['<', "http://localhost:5000/entities/", personSlug, '#id', '>'])
                 p = Person(uri)
 
 
@@ -59,7 +59,7 @@ class Globals(object):
 
             for ir in irs:
                 personSlug = '-'.join(unicodedata.normalize('NFKD', ir).encode('ascii','ignore').split()).lower()
-                uri = ''.join(['<', "http://localhost:5000/entities/", personSlug, '>'])
+                uri = ''.join(['<', "http://localhost:5000/entities/", personSlug, '#id', '>'])
                 p = Person(uri)
                 p.name = ir
                 a.ivrs = a.ivrs + [p]

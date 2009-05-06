@@ -1,10 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div id="dataBody" xmlns:py="http://genshi.edgewall.org/">
-<p>
+<h2>Submit information</h2>
+
+<p>Testforms</p>
+
+<h3>Submit article info</h3>
+
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    var current= 1;
+
+    $$(document).ready(function() {
+        $$(".inputBox").autocompleteArray(["Allen","Albert","Alberto","Alladin"]);
+
+        $$("#addPerson").click(function() {
+            current++;
+            $$newPerson= $$("#contributorBlock").clone(true);
+            $$newPerson.children("p").children("label").each(function(i) {
+                var $$currentElem= $$(this);
+                $$currentElem.attr("for",$$currentElem.attr("for")+current);
+            });
+    
+            $$newPerson.children("p").children("input").each(function(i) {
+                var $$currentElem= $$(this);
+                $$currentElem.attr("name",$$currentElem.attr("name")+current);
+                $$currentElem.attr("id",$$currentElem.attr("id")+current);
+            });
+    
+            $$newPerson.appendTo("#contributorsList");
+            $$newPerson.removeClass("hideElement");
+            $$(".inputBox").autocompleteArray(["Allen","Albert","Alberto","Alladin"]);
+
+        });
+    });
+
+    /*]]>*/
+
+</script> 
+
 <form id="myForm" action="comment.php" method="post"> 
-    Name: <input type="text" name="name" /> 
-    Comment: <textarea name="comment"></textarea> 
-    <input type="submit" value="Submit Comment" /> 
+    <div>Title: <input type="text" name="name" /></div>
+    <div>Abstract: <textarea name="comment"></textarea> </div>
+    <div id="contributorsList">
+    <div id="contributorBlock" >Contributor
+        <select name="role">
+            <option value="maker">Creator</option>
+            <option value="interviewer">Interviewer</option>
+            <option value="interviewee">Interviewee</option>
+            <option value="translator">Translator</option>
+        </select>
+        <input class="inputBox" type="text" name="creator" />
+        <input type="button" id="addPerson" value="Add Another Person" />
+
+    </div>
+    </div>
+    <div>From page <input type="text" name="name" /> to page <input type="text" name="name" /></div>
+    <div><input type="submit" value="Submit info" /> </div>
 </form>
-</p>
 </div>

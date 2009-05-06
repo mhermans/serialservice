@@ -2,6 +2,14 @@
 <div    xmlns:py="http://genshi.edgewall.org/"
         xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<p>${c.person.name}</p>
+  <div class="path">
+    <p><a href="${''.join([c.baseUrl, 'new'])}">HOME</a> :: <a href="${''.join([c.baseUrl, 'authors'])}">AUTHORS</a> :: <a href="${c.person.resUri}">${c.person.name.upper()}</a></p>
+  </div>
+
+<h2>${c.person.name}</h2>
+
+    <div class="articleInfo" py:for="a in c.articles">
+        ${a.title}
+    </div>
 
 </div>
