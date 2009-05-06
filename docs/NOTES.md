@@ -95,6 +95,8 @@ Thanks to:
 * http://plugins.learningjquery.com/expander/index.html
 * Various sites for demonstrating css-tricks
 * COLOURlovers http://www.colourlovers.com/palette/804447/know_thy_enemy
+* http://www.pengoworks.com/workshop/jquery/autocomplete.htm
+* http://www.coldfusionjedi.com/index.cfm/2009/2/22/Using-jQuery-to-add-form-fields--with-validation
 
 Various
 -------

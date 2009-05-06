@@ -7,9 +7,11 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>    
     <title py:content="c.title">This is replaced.</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
-    <script type="text/javascript" src="http://plugins.learningjquery.com/expander/jquery.expander.js"></script>
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" />
+    <script type="text/javascript" src="http://plugins.learningjquery.com/expander/jquery.expander.js" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css" />
+    
+    <script type="text/javascript" src="js/jquery.autocomplete.js" />
     <link rel="stylesheet" type="text/css" href="${''.join([c.baseUrl, 'css/main.css'])}" />
 
 </head>
