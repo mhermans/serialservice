@@ -17,7 +17,9 @@ If succesfull, it will provide a serial (alerting) service for progressive perio
 Current state
 -------------
 
-Proof of concept works: RDF data is loaded in memory; mapped to python classes and navigated using Pylons & Genshi templates.
+* Proof of concept works: RDF data is loaded in memory; mapped to python classes and navigated using Pylons & Genshi templates.
+* Site-layout: XHTML, CSS, ...
+* Dynamic data-entry forms (autocomplete with backend)
 
 Installation and Setup
 ----------------------
